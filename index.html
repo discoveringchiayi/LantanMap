@@ -1,73 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>?∪??唳撠汗</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>校園環景導覽</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="map-viewport">
     <div class="map-container" id="mapContainer">
-      <img id="mapImage" class="map-bg" src="map.png" alt="?∪??啣?" draggable="false" />
-        
-      <!-- ???暺?嚗 瘛瑕??? -->
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html" class="tl-pin" id="pin-a" style="left: 30.62%; top: 82.62%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?⊿??亙</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#18--10" class="tl-pin" style="left: 7.55%; top: 48.47%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">摮詨??/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#16--8" class="tl-pin" style="left: 10.36%; top: 51.78%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">摮訾???/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#15--7" class="tl-pin" style="left: 15.47%; top: 52.79%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">摮訾???/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#14--6" class="tl-pin" style="left: 20.58%; top: 56.68%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">摮訾???/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#13--5" class="tl-pin" style="left: 25.97%; top: 56.24%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">摮訾???/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#12--4" class="tl-pin" style="left: 25.03%; top: 53.01%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">摰輯?擗輒</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E14嘉大昆蟲館旁(完成)/app-files/index.html#1-" class="tl-pin" style="left: 23.32%; top: 72.68%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">颲脩???桐葉敹?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E14嘉大昆蟲館旁(完成)/app-files/index.html#3-" class="tl-pin" style="left: 21.24%; top: 70.37%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">蝬遣蝭?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E14嘉大昆蟲館旁(完成)/app-files/index.html#5-" class="tl-pin" style="left: 18.54%; top: 68.80%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">?之?擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E1-13林牧路(完成)/app-files/index.html#3--31" class="tl-pin" style="left: 42.44%; top: 87.28%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">?冽??拍撌亙?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E1-13林牧路(完成)/app-files/index.html#12--10" class="tl-pin" style="left: 57.99%; top: 83.74%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">?閰阡???/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#6--7" class="tl-pin" style="left: 52.48%; top: 42.13%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">??憭抒?敺瑞?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#8--9" class="tl-pin" style="left: 57.71%; top: 36.51%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">?鞈?擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#9--10" class="tl-pin" style="left: 61.25%; top: 33.44%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">?蝘飛擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#10--11" class="tl-pin" style="left: 63.80%; top: 31.23%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">颲脫平蝘飛擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#11--12" class="tl-pin" style="left: 65.55%; top: 29.71%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">颲脫平?蝘?擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#12--13" class="tl-pin" style="left: 67.35%; top: 28.15%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">璊擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#12--13" class="tl-pin" style="left: 69.17%; top: 26.57%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">瘞渡擗??弦銝剖?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#13--14" class="tl-pin" style="left: 71.28%; top: 24.74%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">瘞渡??蝘飛擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8%20(完成)/app-files/index.html#4-c-31" class="tl-pin" style="left: 35.15%; top: 84.09%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?菜?脫?憭扳?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8%20(完成)/app-files/index.html#11-c-7" class="tl-pin" style="left: 41.91%; top: 79.11%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">皜豢陶瘙?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8%20(完成)/app-files/index.html#14-f-3" class="tl-pin" style="left: 38.27%; top: 86.10%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">璈擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#4-c-14" class="tl-pin" style="left: 46.28%; top: 69.31%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?汙擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#7--7" class="tl-pin" style="left: 42.34%; top: 68.67%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?∠?瘨祥??蝷?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#9--81" class="tl-pin" style="left: 44.42%; top: 66.96%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">摮貊?瘣餃?銝剖?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#10--82" class="tl-pin" style="left: 46.49%; top: 65.24%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?餌銝擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#12--91" class="tl-pin" style="left: 51.80%; top: 59.62%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">??銝擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#37--2" class="tl-pin" style="left: 42.02%; top: 73.87%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">??擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#16--121" class="tl-pin" style="left: 59.08%; top: 56.89%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">撌亦?擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#19--15" class="tl-pin" style="left: 63.82%; top: 50.44%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">憌?蝘飛擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#25-a-20" class="tl-pin" style="left: 71.61%; top: 52.24%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?航?摮貊頂憭扳?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#28-a-22" class="tl-pin" style="left: 80.54%; top: 44.92%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">蝬??飛憭扳?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#E1--2" class="tl-pin" style="left: 32.95%; top: 56.74%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">??∪頨怠挪??/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#E1--2" class="tl-pin" style="left: 34.48%; top: 56.74%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?剜蔬???</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#14--11" class="tl-pin" style="left: 55.38%; top: 59.15%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">颲脣飛??/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#35-a-30" class="tl-pin" style="left: 87.93%; top: 26.96%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">璊??/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#22--18" class="tl-pin" style="left: 69.77%; top: 43.10%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">????葉敹?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#4--1" class="tl-pin" style="left: 47.24%; top: 53.32%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">??鈭尹</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#3--2" class="tl-pin" style="left: 45.39%; top: 55.75%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?餌鈭尹</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#6--1" class="tl-pin" style="left: 48.97%; top: 61.10%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?極憭扳?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#9--2" class="tl-pin" style="left: 53.39%; top: 55.63%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">??鈭斗?摮詨?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#11--1" class="tl-pin" style="left: 54.98%; top: 46.79%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">瘞游極???岫撽</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#12--1" class="tl-pin" style="left: 58.44%; top: 49.82%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">憌??極撱?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#15-" class="tl-pin" style="left: 63.23%; top: 45.86%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">璈擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#16-f-1" class="tl-pin" style="left: 65.80%; top: 44.18%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">??Ｘ平璈１撖阡?摰?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#36-f-7" class="tl-pin" style="left: 51.54%; top: 65.28%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">銵銝剖?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#17--29" class="tl-pin" style="left: 55.80%; top: 68.88%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">璉格?擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#19--301" class="tl-pin" style="left: 59.71%; top: 72.01%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?蝘飛擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#8--23" class="tl-pin" style="left: 54.49%; top: 79.23%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?訾誘??/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#20--31" class="tl-pin" style="left: 62.41%; top: 74.65%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">??Ｗ???典誨銝剖?</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#24--33" class="tl-pin" style="left: 58.02%; top: 63.48%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">璉格??憭見?折尹</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#31-a-26" class="tl-pin" style="left: 89.96%; top: 38.80%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">???渲齒?砍恕</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#5--6" class="tl-pin" style="left: 47.84%; top: 49.68%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">颲脰??渡恣?恕</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#8--9" class="tl-pin" style="left: 62.34%; top: 37.24%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">???亙熒擗?/div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D15-26/app-files/index.html#7-" class="tl-pin" style="left: 77.20%; top: 41.30%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">?鞈?擗?/div></a>
+      <img id="mapImage" class="map-bg" src="map.png" alt="校園地圖" draggable="false" />
     </div>
   </div>
 
@@ -84,9 +26,7 @@
       anchorEl.style.left = `${pin.left}%`;
       anchorEl.style.top = `${pin.top}%`;
 
-      if (pin.id) {
-        anchorEl.id = pin.id;
-      }
+      if (pin.id) anchorEl.id = pin.id;
 
       const dotEl = document.createElement('div');
       dotEl.className = `tl-dot ${pin.dotClass || 'blue-dot'}`;
@@ -101,31 +41,18 @@
 
     async function loadPinsData() {
       try {
-        if (window.location.protocol === 'file:') {
-          return;
-        }
-
         const response = await fetch('./data/pins.json');
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}`);
-        }
-
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const pins = await response.json();
-        mapContainerEl.querySelectorAll('.tl-pin').forEach((el) => el.remove());
-        pins.forEach((pin) => {
-          mapContainerEl.appendChild(createPinElement(pin));
-        });
+        pins.forEach((pin) => mapContainerEl.appendChild(createPinElement(pin)));
       } catch (error) {
-        console.error('頛暺?鞈?憭望?:', error);
+        console.error('載入點位資料失敗：', error);
       }
     }
 
-    // 閮??桀??葬?曉???蝵殷???transform 蝯曹???嚗?
     let currentScale = 1;
     let translateX = 0;
     let translateY = 0;
-
-    // 閮?皛??臬甇????
     let isDragging = false;
     let startX = 0;
     let startY = 0;
@@ -141,18 +68,14 @@
       updateTransform();
     }
 
-    // 霈?捆?函雁?????詨??撖祆?嚗葬?曇?蝒??啣?暺停銝???銝??
     function resizeMapContainer() {
       const w = window.innerWidth;
       const h = window.innerHeight;
-
       const ratio = mapImageEl.naturalWidth / mapImageEl.naturalHeight;
       if (!ratio || !Number.isFinite(ratio)) return;
 
       let newW;
       let newH;
-
-      // 鋆?Ｗ?銝??寡??瑕祝瘥?閮??箏捆?典偕撖賂?
       if (w / h > ratio) {
         newH = h;
         newW = newH * ratio;
@@ -163,45 +86,26 @@
 
       mapContainerEl.style.width = `${newW}px`;
       mapContainerEl.style.height = `${newH}px`;
-
-      // ?踹?閬??寡?撠箏站敺?蝬剜??? pan/zoom ??閬死?臭?
       resetTransform();
     }
 
-    mapImageEl.addEventListener('load', () => {
-      resizeMapContainer();
-    });
+    mapImageEl.addEventListener('load', resizeMapContainer);
+    if (mapImageEl.complete && mapImageEl.naturalWidth) resizeMapContainer();
+    window.addEventListener('resize', resizeMapContainer);
 
-    // ?亙??歇敹怠?頛摰?嚗Ⅱ靽???銝甈∟身摰?
-    if (mapImageEl.complete && mapImageEl.naturalWidth) {
-      resizeMapContainer();
-    }
-
-    window.addEventListener('resize', () => {
-      resizeMapContainer();
-    });
-
-    // ?啣?摨扳??Ｘ葫?剁???桀?暺??詨??澆?捆?函??曉?瘥?
     document.addEventListener('click', function (e) {
       if (!mapContainerEl.contains(e.target)) return;
       if (e.target.closest && e.target.closest('.tl-pin')) return;
 
-      // 1) ? transform 敺??恍摨扳?蝞?摰孵?扼??詨?雿蔭
       const rect = mapContainerEl.getBoundingClientRect();
       const xScaled = e.clientX - rect.left;
       const yScaled = e.clientY - rect.top;
-
-      // 2) ???典?蝮格??摰孵摨扳?嚗?擃移摨佗?
       const scale = currentScale || 1;
       const xUnscaled = xScaled / scale;
       const yUnscaled = yScaled / scale;
-
-      // 3) ?敺??? CSS 鋆∩蝙?函? top/left ?曉?瘥?
       const w = mapContainerEl.clientWidth || rect.width || 1;
       const h = mapContainerEl.clientHeight || rect.height || 1;
-      
-      // 4) 靽格迤?暺??桀? left/top ?臬???.tl-pin 撌虫?閫?
-      //    雿蝙?刻????銝剖?嚗?甇方?????????迤撠???
+
       let dotHalfW = 0;
       let dotHalfH = 0;
       const sampleDot = mapContainerEl.querySelector('.tl-dot');
@@ -213,39 +117,28 @@
 
       const leftPct = ((xUnscaled - dotHalfW) / w) * 100;
       const topPct = ((yUnscaled - dotHalfH) / h) * 100;
-
       alert(`left: ${leftPct.toFixed(2)}%;\ntop: ${topPct.toFixed(2)}%;`);
     });
 
-    // --- 1. 皛曇憚蝮格? ---
     mapContainerEl.addEventListener('wheel', function (e) {
       e.preventDefault();
-
       mapContainerEl.style.transition = 'transform 0.15s ease-out';
-
       if (e.deltaY < 0) currentScale += 0.1;
       else currentScale -= 0.1;
-
       if (currentScale < 1) currentScale = 1;
       if (currentScale > 3) currentScale = 3;
-
       if (currentScale === 1) {
         translateX = 0;
         translateY = 0;
       }
-
       updateTransform();
     }, { passive: false });
 
-    // --- 2. 皛??? ---
     mapContainerEl.addEventListener('mousedown', function (e) {
-      // 暺?啣?暺????嚗停銝??嚗???單韏圈???
       if (e.target.closest && e.target.closest('.tl-pin')) return;
-
       isDragging = true;
       mapContainerEl.style.transition = 'none';
       mapContainerEl.style.cursor = 'grabbing';
-
       startX = e.clientX - translateX;
       startY = e.clientY - translateY;
     });
@@ -253,10 +146,8 @@
     window.addEventListener('mousemove', function (e) {
       if (!isDragging) return;
       e.preventDefault();
-
       translateX = e.clientX - startX;
       translateY = e.clientY - startY;
-
       updateTransform();
     });
 
