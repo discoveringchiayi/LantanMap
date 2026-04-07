@@ -10,7 +10,7 @@
   <div class="map-viewport">
     <div class="map-container" id="mapContainer">
       <img id="mapImage" class="map-bg" src="map.png" alt="校園地圖" draggable="false" />
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html" class="tl-pin" id="pin-a" style="left: 30.62%; top: 82.62%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">校門入口</div></a>
+      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#0--1" class="tl-pin" id="pin-a" style="left: 30.62%; top: 82.62%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">校門入口</div></a>
       <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#18--10" class="tl-pin" style="left: 7.55%; top: 48.47%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">學六舍</div></a>
       <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#16--8" class="tl-pin" style="left: 10.36%; top: 51.78%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">學五舍</div></a>
       <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#15--7" class="tl-pin" style="left: 15.47%; top: 52.79%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">學三舍</div></a>
@@ -244,42 +244,6 @@
 
     window.addEventListener('resize', () => {
       resizeMapContainer();
-    });
-
-    // 地圖座標探測器（回傳目前點位相對於地圖容器的百分比）
-    document.addEventListener('click', function (e) {
-      if (!mapContainerEl.contains(e.target)) return;
-      if (e.target.closest && e.target.closest('.tl-pin')) return;
-
-      // 1) 先用 transform 後的畫面座標算出「在容器內」的相對位置
-      const rect = mapContainerEl.getBoundingClientRect();
-      const xScaled = e.clientX - rect.left;
-      const yScaled = e.clientY - rect.top;
-
-      // 2) 再回推到「未縮放」的容器座標（提高精度）
-      const scale = currentScale || 1;
-      const xUnscaled = xScaled / scale;
-      const yUnscaled = yScaled / scale;
-
-      // 3) 最後轉成你 CSS 裡使用的 top/left 百分比
-      const w = mapContainerEl.clientWidth || rect.width || 1;
-      const h = mapContainerEl.clientHeight || rect.height || 1;
-      
-      // 4) 修正「錨點」：目前 left/top 是套在 .tl-pin 左上角，
-      //    但使用者點的是圓點中心，因此要扣掉半徑才會真正對準。
-      let dotHalfW = 0;
-      let dotHalfH = 0;
-      const sampleDot = mapContainerEl.querySelector('.tl-dot');
-      if (sampleDot) {
-        const dotRect = sampleDot.getBoundingClientRect();
-        dotHalfW = (dotRect.width / scale) / 2;
-        dotHalfH = (dotRect.height / scale) / 2;
-      }
-
-      const leftPct = ((xUnscaled - dotHalfW) / w) * 100;
-      const topPct = ((yUnscaled - dotHalfH) / h) * 100;
-
-      alert(`left: ${leftPct.toFixed(2)}%;\ntop: ${topPct.toFixed(2)}%;`);
     });
 
     // --- 1. 滾輪縮放功能 ---
