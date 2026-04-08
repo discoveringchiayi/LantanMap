@@ -40,7 +40,7 @@ var APP_DATA = {
           "pitch": 0.23537808664512028,
           "rotation": 0,
           "target": "to-jiahe-5",
-          "urlTarget": "https://ncyu-b-test.netlify.app/#4--5",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#4--5",
           "title": "嘉禾路-5(西側出入口)"
         }
       ],
