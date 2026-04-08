@@ -244,60 +244,64 @@
     }
   }
 
-  // --- 改好的網址跳轉箭頭功能 ---
-  function createLinkHotspotElement(hotspot) {
+ // --- 改好的網址跳轉箭頭功能 ---
+ function createLinkHotspotElement(hotspot) {
 
-    // Create wrapper element to hold icon and tooltip.
-    var wrapper = document.createElement('div');
-    wrapper.classList.add('hotspot');
-    wrapper.classList.add('link-hotspot');
+  // Create wrapper element to hold icon and tooltip.
+  var wrapper = document.createElement('div');
+  wrapper.classList.add('hotspot');
+  wrapper.classList.add('link-hotspot');
 
-    // Create image element.
-    var icon = document.createElement('img');
-    icon.src = 'img/link.png';
-    icon.classList.add('link-hotspot-icon');
+  // Create image element.
+  var icon = document.createElement('img');
+  icon.src = 'img/link.png';
+  icon.classList.add('link-hotspot-icon');
 
-    // Set rotation transform.
-    var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
-    for (var i = 0; i < transformProperties.length; i++) {
-      var property = transformProperties[i];
-      icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
-    }
-
-    // Add click event handler.
-    wrapper.addEventListener('click', function() {
-      if (hotspot.urlTarget) {
-        // 如果有設定 urlTarget，就執行網址跳轉
-        window.open(hotspot.urlTarget, '_self');
-      } else {
-        // 否則執行原本的內部場景切換
-        switchScene(findSceneById(hotspot.target));
-      }
-    });
-
-    // Prevent touch and scroll events from reaching the parent element.
-    // This prevents the view control logic from interfering with the hotspot.
-    stopTouchAndScrollEventPropagation(wrapper);
-
-    // Create tooltip element.
-    var tooltip = document.createElement('div');
-    tooltip.classList.add('hotspot-tooltip');
-    tooltip.classList.add('link-hotspot-tooltip');
-    
-    // 安全檢查：如果是跳轉外部網址，會找不到內部目標，改抓自訂標題
-    var targetData = findSceneDataById(hotspot.target);
-    if (targetData) {
-      tooltip.innerHTML = targetData.name;
-    } else {
-      tooltip.innerHTML = hotspot.title || "前往下一個區域"; 
-    }
-
-    wrapper.appendChild(icon);
-    wrapper.appendChild(tooltip);
-
-    return wrapper;
+  // Set rotation transform.
+  var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
+  for (var i = 0; i < transformProperties.length; i++) {
+    var property = transformProperties[i];
+    icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
   }
 
+  // Add click event handler.
+  wrapper.addEventListener('click', function() {
+    if (hotspot.urlTarget) {
+      // 如果有設定 urlTarget，就執行網址跳轉
+      window.location.href = hotspot.urlTarget;
+    } else {
+      // 否則執行原本的內部場景切換
+      var targetSceneData = findSceneDataById(hotspot.target);
+      if (targetSceneData) {
+        switchScene(findSceneById(hotspot.target));
+      }
+    }
+  });
+
+  // Prevent touch and scroll events from reaching the parent element.
+  // This prevents the view control logic from interfering with the hotspot.
+  stopTouchAndScrollEventPropagation(wrapper);
+
+  // Create tooltip element.
+  var tooltip = document.createElement('div');
+  tooltip.classList.add('hotspot-tooltip');
+  tooltip.classList.add('link-hotspot-tooltip');
+
+  // 安全檢查：設定浮動提示文字
+  var targetData = findSceneDataById(hotspot.target);
+  if (hotspot.title) {
+      tooltip.innerHTML = hotspot.title;
+  } else if (targetData && targetData.name) {
+      tooltip.innerHTML = targetData.name;
+  } else {
+      tooltip.innerHTML = "前往下一個區域"; 
+  }
+
+  wrapper.appendChild(icon);
+  wrapper.appendChild(tooltip);
+
+  return wrapper;
+}
   function createInfoHotspotElement(hotspot) {
 
     // Create wrapper element to hold icon and tooltip.
