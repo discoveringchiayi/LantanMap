@@ -46,7 +46,7 @@ var APP_DATA = {
           "pitch": 0.3073546919390857,
           "rotation": 0,
           "target": "to-a-2",
-          "urlTarget": "https://ncyu-a-test.netlify.app/#1--2",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#1--2",
           "title": "大學路-2"
         }
       ],
@@ -609,7 +609,7 @@ var APP_DATA = {
           "pitch": 0.09184473424524242,
           "rotation": 0,
           "target": "to-a-5",
-          "urlTarget": "https://ncyu-a-test.netlify.app/#4--5",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#4--5",
           "title": "大學路-5"
         }
       ],
