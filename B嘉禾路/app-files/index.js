@@ -398,14 +398,6 @@
     }
     return null;
   }
-// --- 座標測量器開始 ---
-var panoElement = document.getElementById('pano');
-panoElement.addEventListener('dblclick', function(e) {
-  var view = viewer.view();
-  var loc = view.screenToCoordinates({x: e.clientX, y: e.clientY});
-  alert("yaw: " + loc.yaw + "\npitch: " + loc.pitch);
-});
-// --- 座標測量器結束 ---
 // --- 指定降落功能開始 ---
 var targetId = window.location.hash.replace('#', '');
 var initialScene = scenes[0]; // 如果網址沒指定 ID，預設顯示第一張
