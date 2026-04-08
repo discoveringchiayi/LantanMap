@@ -46,7 +46,7 @@ var APP_DATA = {
           "pitch": 0.07599392840945107,
           "rotation": 0,
           "target": "back-to-a-9",
-          "urlTarget": "https://ncyu-a-test.netlify.app/#11--9", 
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#11--9", 
           "title": "大學路-9"
           
         }
@@ -320,7 +320,7 @@ var APP_DATA = {
           "pitch": 0.07085380065612412,
           "rotation": 0,
           "target": "to-linmu-11",
-          "urlTarget": "https://ncyu-e1-test.netlify.app//#13--11", 
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/E1-13林牧路(完成)/app-files/index.html#13--11", 
           "title": "林牧路-11"
         }
       ],
@@ -512,7 +512,7 @@ var APP_DATA = {
           "pitch": 0.26458808901205444,
           "rotation": 0,
           "target": "to-a-10",
-          "urlTarget": "https://ncyu-a-test.netlify.app/#13--10", 
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#13--10", 
           "title": "大學路-10"
         }
       ],
@@ -1501,7 +1501,9 @@ var APP_DATA = {
           "yaw": -1.3163312124335746,
           "pitch": 0.4599758602387958,
           "rotation": 7.0685834705770345,
-          "target": "9--24"
+          "target": "to-a-10",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#9--24", 
+          "title": "大學路-10"
         }
       ],
       "infoHotspots": []
@@ -1722,7 +1724,7 @@ var APP_DATA = {
           "pitch": 0.07104761902391488,
           "rotation": 0,
           "target": "back-to-12",
-          "urlTarget": "https://ncyu-a-test.netlify.app/#15--12", 
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#15--12", 
           "title": "大學路-12"
         }
       ],
