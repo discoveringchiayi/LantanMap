@@ -5,74 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>校園環景導覽</title>
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* 強制放大地圖上的點點，並讓裡面的數字置中 */
+        .custom-dot {
+            width: 40px !important;  /* 點點變大 */
+            height: 40px !important; /* 點點變大 */
+            border-radius: 50% !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            color: #ffffff !important;
+            font-size: 20px !important;
+            font-weight: 900 !important;
+            border: 3px solid white !important; /* 加上白邊更明顯 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5) !important;
+            text-shadow: 0px 0px 4px rgba(0,0,0,0.8); /* 確保數字在任何背景色都清楚 */
+        }
+
+        /* 標籤文字也稍微放大 */
+        .custom-label {
+            font-size: 16px !important;
+            font-weight: bold !important;
+            margin-top: 5px !important;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+        }
+
+        /* ==========================================
+           🌟 圖例面板的專屬設計
+           ========================================== */
+        #legend-panel {
+            position: fixed; 
+            top: 20px;
+            right: 20px; 
+            background-color: rgba(30, 30, 30, 0.9); 
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            z-index: 1000; 
+            max-height: 85vh; /* 避免名單太長 */
+            overflow-y: auto; /* 超過高度可以滾動 */
+            width: 240px;
+            font-family: sans-serif;
+        }
+
+        #legend-panel h3 {
+            margin: 0 0 15px 0;
+            font-size: 22px;
+            border-bottom: 2px solid #00e5ff;
+            padding-bottom: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        #legend-panel ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #legend-panel li {
+            font-size: 16px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            cursor: pointer; 
+            transition: color 0.2s ease, transform 0.1s ease;
+        }
+
+        #legend-panel li:hover {
+            color: #00e5ff; 
+            transform: translateX(5px);
+        }
+
+        .leg-num {
+            display: inline-block;
+            background-color: #555; /* 圖例的圓圈底色 */
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 14px;
+            flex-shrink: 0;
+            border: 2px solid #ccc;
+        }
+    </style>
 </head>
 <body>
+    
+  <div id="legend-panel">
+      <h3>📍 校園圖例</h3>
+      <ul id="legend-list">
+          </ul>
+  </div>
+
   <div class="map-viewport">
     <div class="map-container" id="mapContainer">
       <img id="mapImage" class="map-bg" src="map.png" alt="校園地圖" draggable="false" />
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#0--1" class="tl-pin" style="left: 30.62%; top: 82.62%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">校門入口</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#18--10" class="tl-pin" style="left: 7.55%; top: 48.47%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">學六舍</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#16--8" class="tl-pin" style="left: 10.36%; top: 51.78%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">學五舍</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#15--7" class="tl-pin" style="left: 15.47%; top: 52.79%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">學三舍</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#14--6" class="tl-pin" style="left: 20.58%; top: 56.68%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">學二舍</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#13--5" class="tl-pin" style="left: 25.97%; top: 56.24%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">學一舍</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#12--4" class="tl-pin" style="left: 25.03%; top: 53.01%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-dorm"></div><div class="tl-label">宿舍餐廳</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E14嘉大昆蟲館旁(完成)/app-files/index.html#1-" class="tl-pin" style="left: 23.32%; top: 72.68%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">農產品展售中心</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E14嘉大昆蟲館旁(完成)/app-files/index.html#3-" class="tl-pin" style="left: 21.24%; top: 70.37%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">綠建築</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E14嘉大昆蟲館旁(完成)/app-files/index.html#5-" class="tl-pin" style="left: 18.54%; top: 68.80%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">嘉大昆蟲館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E1-13林牧路(完成)/app-files/index.html#3--31" class="tl-pin" style="left: 42.44%; top: 87.28%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">木材利用工廠</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/E1-13林牧路(完成)/app-files/index.html#12--10" class="tl-pin" style="left: 57.99%; top: 83.74%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">動物試驗場</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#6--7" class="tl-pin" style="left: 52.48%; top: 42.13%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">卍嘉大福德祠</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#8--9" class="tl-pin" style="left: 57.71%; top: 36.51%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">生物資源館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#9--10" class="tl-pin" style="left: 61.25%; top: 33.44%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">生命科學館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#10--11" class="tl-pin" style="left: 63.80%; top: 31.23%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">農業科學館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#11--12" class="tl-pin" style="left: 65.55%; top: 29.71%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">農業生物科技館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#12--13" class="tl-pin" style="left: 67.35%; top: 28.15%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">植醫館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#12--13" class="tl-pin" style="left: 69.17%; top: 26.57%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">水產養殖研究中心</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#13--14" class="tl-pin" style="left: 71.28%; top: 24.74%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot dot-campus"></div><div class="tl-label">水生生物科學館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8%20(完成)/app-files/index.html#4-c-31" class="tl-pin" style="left: 35.15%; top: 84.09%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">創新育成大樓</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8%20(完成)/app-files/index.html#11-c-7" class="tl-pin" style="left: 41.91%; top: 79.11%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">游泳池</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8%20(完成)/app-files/index.html#14-f-3" class="tl-pin" style="left: 38.27%; top: 86.10%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">機能館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#4-c-14" class="tl-pin" style="left: 46.28%; top: 69.31%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">嘉禾館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#7--7" class="tl-pin" style="left: 42.34%; top: 68.67%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">員生消費合作社</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#9--81" class="tl-pin" style="left: 44.42%; top: 66.96%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">學生活動中心</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#10--82" class="tl-pin" style="left: 46.49%; top: 65.24%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">電物一館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#12--91" class="tl-pin" style="left: 51.80%; top: 59.62%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">應化一館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#37--2" class="tl-pin" style="left: 42.02%; top: 73.87%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">瑞穗館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#16--121" class="tl-pin" style="left: 59.08%; top: 56.89%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">工程館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#19--15" class="tl-pin" style="left: 63.82%; top: 50.44%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">食品科學館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#25-a-20" class="tl-pin" style="left: 71.61%; top: 52.24%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">景觀學系大樓</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#28-a-22" class="tl-pin" style="left: 80.54%; top: 44.92%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">綜合教學大樓</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#E1--2" class="tl-pin" style="left: 32.95%; top: 56.74%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">教職員單身宿舍</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#E1--2" class="tl-pin" style="left: 34.48%; top: 56.74%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">蘭潭招待所</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#14--11" class="tl-pin" style="left: 55.38%; top: 59.15%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">農學院</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#35-a-30" class="tl-pin" style="left: 87.93%; top: 26.96%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">植物園</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#22--18" class="tl-pin" style="left: 69.77%; top: 43.10%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">園藝技藝中心</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#4--1" class="tl-pin" style="left: 47.24%; top: 53.32%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">應化二館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#3--2" class="tl-pin" style="left: 45.39%; top: 55.75%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">電物二館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#6--1" class="tl-pin" style="left: 48.97%; top: 61.10%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">理工大樓</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#9--2" class="tl-pin" style="left: 53.39%; top: 55.63%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">國際交流學園</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#11--1" class="tl-pin" style="left: 54.98%; top: 46.79%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">水工與材料試驗場</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#12--1" class="tl-pin" style="left: 58.44%; top: 49.82%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">食品加工廠</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#15-" class="tl-pin" style="left: 63.23%; top: 45.86%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">機電館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#16-f-1" class="tl-pin" style="left: 65.80%; top: 44.18%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">生物產業機械實驗室</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#36-f-7" class="tl-pin" style="left: 51.54%; top: 65.28%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">行政中心</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#17--29" class="tl-pin" style="left: 55.80%; top: 68.88%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">森林館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#19--301" class="tl-pin" style="left: 59.71%; top: 72.01%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">動物科學館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#8--23" class="tl-pin" style="left: 54.49%; top: 79.23%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">司令台</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#20--31" class="tl-pin" style="left: 62.41%; top: 74.65%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">動物產品研發推廣中心</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#24--33" class="tl-pin" style="left: 58.02%; top: 63.48%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">森林生物多樣性館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#31-a-26" class="tl-pin" style="left: 89.96%; top: 38.80%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">園藝場辦公室</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#5--6" class="tl-pin" style="left: 47.84%; top: 49.68%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">農藝場管理室</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#8--9" class="tl-pin" style="left: 62.34%; top: 37.24%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">生技健康館</div></a>
-      <a href="https://discoveringchiayi.github.io/map-of-Lantan-campus/D15-26/app-files/index.html#7-" class="tl-pin" style="left: 77.20%; top: 41.30%;" target="_blank" rel="noopener noreferrer"><div class="tl-dot blue-dot"></div><div class="tl-label">圖書資訊館</div></a>
-      <!-- 點位由 data/pins.json 自動產生 -->
-    </div>
+      </div>
   </div>
 
   <script>
     const mapContainerEl = document.getElementById('mapContainer');
     const mapImageEl = document.getElementById('mapImage');
+    const legendList = document.getElementById('legend-list'); // 抓取圖例容器
 
     function createPinElement(pin) {
       const anchorEl = document.createElement('a');
@@ -88,10 +129,13 @@
       }
 
       const dotEl = document.createElement('div');
-      dotEl.className = `tl-dot ${pin.dotClass || 'blue-dot'}`;
+      // 🌟 套用新樣式 custom-dot，並塞入數字
+      dotEl.className = `tl-dot ${pin.dotClass || 'blue-dot'} custom-dot`;
+      if (pin.num) dotEl.textContent = pin.num; 
 
       const labelEl = document.createElement('div');
-      labelEl.className = 'tl-label';
+      // 🌟 套用新樣式 custom-label
+      labelEl.className = 'tl-label custom-label';
       labelEl.textContent = pin.label;
 
       anchorEl.append(dotEl, labelEl);
@@ -126,175 +170,4 @@
       { "label": "員生消費合作社", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#7--7", "left": 42.34, "top": 68.67, "dotClass": "blue-dot", "group": "A 區" },
       { "label": "學生活動中心", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#9--81", "left": 44.42, "top": 66.96, "dotClass": "blue-dot", "group": "A 區" },
       { "label": "電物一館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#10--82", "left": 46.49, "top": 65.24, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "應化一館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#12--91", "left": 51.80, "top": 59.62, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "瑞穗館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#37--2", "left": 42.02, "top": 73.87, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "工程館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#16--121", "left": 59.08, "top": 56.89, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "食品科學館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#19--15", "left": 63.82, "top": 50.44, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "景觀學系大樓", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#25-a-20", "left": 71.61, "top": 52.24, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "綜合教學大樓", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#28-a-22", "left": 80.54, "top": 44.92, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "教職員單身宿舍", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#E1--2", "left": 32.95, "top": 56.74, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "蘭潭招待所", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#E1--2", "left": 34.48, "top": 56.74, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "農學院", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#14--11", "left": 55.38, "top": 59.15, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "植物園", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#35-a-30", "left": 87.93, "top": 26.96, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "園藝技藝中心", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#22--18", "left": 69.77, "top": 43.10, "dotClass": "blue-dot", "group": "A 區" },
-      { "label": "應化二館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#4--1", "left": 47.24, "top": 53.32, "dotClass": "blue-dot", "group": "D1 區" },
-      { "label": "電物二館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#3--2", "left": 45.39, "top": 55.75, "dotClass": "blue-dot", "group": "D1 區" },
-      { "label": "理工大樓", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#6--1", "left": 48.97, "top": 61.10, "dotClass": "blue-dot", "group": "D1 區" },
-      { "label": "國際交流學園", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#9--2", "left": 53.39, "top": 55.63, "dotClass": "blue-dot", "group": "D1 區" },
-      { "label": "水工與材料試驗場", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#11--1", "left": 54.98, "top": 46.79, "dotClass": "blue-dot", "group": "D1 區" },
-      { "label": "食品加工廠", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#12--1", "left": 58.44, "top": 49.82, "dotClass": "blue-dot", "group": "D1 區" },
-      { "label": "機電館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#15-", "left": 63.23, "top": 45.86, "dotClass": "blue-dot", "group": "D1 區" },
-      { "label": "生物產業機械實驗室", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#16-f-1", "left": 65.80, "top": 44.18, "dotClass": "blue-dot", "group": "D1 區" },
-      { "label": "行政中心", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#36-f-7", "left": 51.54, "top": 65.28, "dotClass": "blue-dot", "group": "C15 區" },
-      { "label": "森林館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#17--29", "left": 55.80, "top": 68.88, "dotClass": "blue-dot", "group": "C15 區" },
-      { "label": "動物科學館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#19--301", "left": 59.71, "top": 72.01, "dotClass": "blue-dot", "group": "C15 區" },
-      { "label": "司令台", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#8--23", "left": 54.49, "top": 79.23, "dotClass": "blue-dot", "group": "C15 區" },
-      { "label": "動物產品研發推廣中心", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#20--31", "left": 62.41, "top": 74.65, "dotClass": "blue-dot", "group": "C15 區" },
-      { "label": "森林生物多樣性館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#24--33", "left": 58.02, "top": 63.48, "dotClass": "blue-dot", "group": "C15 區" },
-      { "label": "園藝場辦公室", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#31-a-26", "left": 89.96, "top": 38.80, "dotClass": "blue-dot", "group": "其他" },
-      { "label": "農藝場管理室", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#5--6", "left": 47.84, "top": 49.68, "dotClass": "blue-dot", "group": "其他" },
-      { "label": "生技健康館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#8--9", "left": 62.34, "top": 37.24, "dotClass": "blue-dot", "group": "其他" },
-      { "label": "圖書資訊館", "href": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D15-26/app-files/index.html#7-", "left": 77.20, "top": 41.30, "dotClass": "blue-dot", "group": "其他" }
-    ];
-
-    async function loadPinsData() {
-      mapContainerEl.querySelectorAll('.tl-pin').forEach((el) => el.remove());
-
-      try {
-        if (window.location.protocol === 'file:') {
-          fallbackPins.forEach((pin) => {
-            mapContainerEl.appendChild(createPinElement(pin));
-          });
-          return;
-        }
-
-        const response = await fetch('./data/pins.json');
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}`);
-        }
-
-        const pins = await response.json();
-        pins.forEach((pin) => {
-          mapContainerEl.appendChild(createPinElement(pin));
-        });
-      } catch (error) {
-        console.error('載入點位資料失敗:', error);
-        fallbackPins.forEach((pin) => {
-          mapContainerEl.appendChild(createPinElement(pin));
-        });
-      }
-    }
-
-    // 記錄目前的縮放倍率與位置（由 transform 統一處理）
-    let currentScale = 1;
-    let translateX = 0;
-    let translateY = 0;
-
-    // 記錄滑鼠是否正在按住拖曳
-    let isDragging = false;
-    let startX = 0;
-    let startY = 0;
-
-    function updateTransform() {
-      mapContainerEl.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentScale})`;
-    }
-
-    function resetTransform() {
-      currentScale = 1;
-      translateX = 0;
-      translateY = 0;
-      updateTransform();
-    }
-
-    // 讓地圖容器維持跟原圖相同的長寬比，縮放視窗時地圖點就不會再「對不到」
-    function resizeMapContainer() {
-      const w = window.innerWidth;
-      const h = window.innerHeight;
-
-      const ratio = mapImageEl.naturalWidth / mapImageEl.naturalHeight;
-      if (!ratio || !Number.isFinite(ratio)) return;
-
-      let newW;
-      let newH;
-
-      // 裝入螢幕且不改變長寬比（計算出容器尺寸）
-      if (w / h > ratio) {
-        newH = h;
-        newW = newH * ratio;
-      } else {
-        newW = w;
-        newH = newW / ratio;
-      }
-
-      mapContainerEl.style.width = `${newW}px`;
-      mapContainerEl.style.height = `${newH}px`;
-
-      // 避免視窗改變尺寸後還維持舊的 pan/zoom 造成視覺錯位
-      resetTransform();
-    }
-
-    mapImageEl.addEventListener('load', () => {
-      resizeMapContainer();
-    });
-
-    // 若圖片已快取載入完成，確保也會跑一次設定
-    if (mapImageEl.complete && mapImageEl.naturalWidth) {
-      resizeMapContainer();
-    }
-
-    window.addEventListener('resize', () => {
-      resizeMapContainer();
-    });
-
-    // --- 1. 滾輪縮放功能 ---
-    mapContainerEl.addEventListener('wheel', function (e) {
-      e.preventDefault();
-
-      mapContainerEl.style.transition = 'transform 0.15s ease-out';
-
-      if (e.deltaY < 0) currentScale += 0.1;
-      else currentScale -= 0.1;
-
-      if (currentScale < 1) currentScale = 1;
-      if (currentScale > 3) currentScale = 3;
-
-      if (currentScale === 1) {
-        translateX = 0;
-        translateY = 0;
-      }
-
-      updateTransform();
-    }, { passive: false });
-
-    // --- 2. 滑鼠拖曳功能 ---
-    mapContainerEl.addEventListener('mousedown', function (e) {
-      // 點到地圖點（連結）就不要拖曳，避免拖曳搶走點擊
-      if (e.target.closest && e.target.closest('.tl-pin')) return;
-
-      isDragging = true;
-      mapContainerEl.style.transition = 'none';
-      mapContainerEl.style.cursor = 'grabbing';
-
-      startX = e.clientX - translateX;
-      startY = e.clientY - translateY;
-    });
-
-    window.addEventListener('mousemove', function (e) {
-      if (!isDragging) return;
-      e.preventDefault();
-
-      translateX = e.clientX - startX;
-      translateY = e.clientY - startY;
-
-      updateTransform();
-    });
-
-    window.addEventListener('mouseup', function () {
-      isDragging = false;
-      mapContainerEl.style.cursor = 'grab';
-    });
-
-    loadPinsData();
-  </script>
-</body>
-</html>
+      { "label": "應化一館", "href": "https://discoveringchiayi.
