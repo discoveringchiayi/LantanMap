@@ -757,7 +757,7 @@ var APP_DATA = {
       "initialViewParameters": {
         "yaw": 1.1384303381673284,
         "pitch": 0.08677711991692227,
-        "fov": 1.5707963267948966
+        "fov": 1.2599180821480807
       },
       "linkHotspots": [
         {
@@ -777,7 +777,7 @@ var APP_DATA = {
         {
           "yaw": 1.8180588188530953,
           "pitch": 0.05926811665936782,
-          "title": "<a href=\"../食品加工廠/index.html\" style=\"text-decoration: underline; font-size: 24px;\">前往食品加工廠</a>",
+          "title": "<a href=\"https://discoveringchiayi.github.io/map-of-Lantan-campus/食品加工廠/app-files/index.html#0-\" target=\"_blank\" style=\"text-decoration: underline; font-size: 24px; color: white;\">前往食品加工廠</a>",
           "text": ""
         }
       ]
