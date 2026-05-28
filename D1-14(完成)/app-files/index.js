@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *   http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -323,6 +323,10 @@
     var title = document.createElement('div');
     title.classList.add('info-hotspot-title');
     title.innerHTML = hotspot.title;
+    
+    // 🌟 魔法加在這裡：允許滑鼠點擊標題區塊內的連結！
+    title.style.pointerEvents = 'auto'; 
+    
     titleWrapper.appendChild(title);
 
     // Create close element.
@@ -342,6 +346,9 @@
     var text = document.createElement('div');
     text.classList.add('info-hotspot-text');
     text.innerHTML = hotspot.text;
+    
+    // 🌟 魔法加在這裡：允許滑鼠點擊內文區塊的連結（雙重保險）！
+    text.style.pointerEvents = 'auto';
 
     // Place header and text into wrapper element.
     wrapper.appendChild(header);

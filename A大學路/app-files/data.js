@@ -469,6 +469,7 @@ var APP_DATA = {
           "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#6--1",
           "title": "理工大樓-1"
         }
+
       ],
       "infoHotspots": [
         {
@@ -757,7 +758,7 @@ var APP_DATA = {
       "initialViewParameters": {
         "yaw": 1.1384303381673284,
         "pitch": 0.08677711991692227,
-        "fov": 1.2599180821480807
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
@@ -777,8 +778,8 @@ var APP_DATA = {
         {
           "yaw": 1.8180588188530953,
           "pitch": 0.05926811665936782,
-          "title": "<a href=\"https://discoveringchiayi.github.io/map-of-Lantan-campus/食品加工廠/app-files/index.html#0-\" target=\"_blank\" style=\"text-decoration: underline; font-size: 24px; color: white;\">前往食品加工廠</a>",
-          "text": ""
+          "title": "食品加工廠",
+          "text": "<br>"
         }
       ]
     },
@@ -1039,14 +1040,6 @@ var APP_DATA = {
           "pitch": 0.1250494617486133,
           "rotation": 0,
           "target": "26-a-21"
-        },
-        {
-          "yaw": -1.1038331069109653,
-          "pitch": 0.07476429835946519,
-          "rotation": 0,
-          "target": "to-linmu-13-5",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/E1-13林牧路(完成)/app-files/index.html#林牧路13.5的ID", 
-          "title": "林牧路-13.5"
         }
       ],
       "infoHotspots": [
