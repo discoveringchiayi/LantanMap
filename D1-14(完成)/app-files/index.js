@@ -248,24 +248,60 @@
     }
   }
 
-  function createLinkHotspotElement(hotspot) {
+function createLinkHotspotElement(hotspot) {
 
-    // Create wrapper element to hold icon and tooltip.
-    var wrapper = document.createElement('div');
-    wrapper.classList.add('hotspot');
-    wrapper.classList.add('link-hotspot');
+  // Create wrapper element to hold icon and tooltip.
+  var wrapper = document.createElement('div');
+  wrapper.classList.add('hotspot');
+  wrapper.classList.add('link-hotspot');
 
-    // Create image element.
-    var icon = document.createElement('img');
-    icon.src = 'img/link.png';
-    icon.classList.add('link-hotspot-icon');
+  // Create image element.
+  var icon = document.createElement('img');
+  icon.src = 'img/link.png';
+  icon.classList.add('link-hotspot-icon');
 
-    // Set rotation transform.
-    var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
-    for (var i = 0; i < transformProperties.length; i++) {
-      var property = transformProperties[i];
-      icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
+  // Set rotation transform.
+  var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
+  for (var i = 0; i < transformProperties.length; i++) {
+    var property = transformProperties[i];
+    icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
+  }
+
+  // Add click event handler.
+  wrapper.addEventListener('click', function() {
+
+    // 外部網址跳轉
+    if (hotspot.urlTarget) {
+      window.location.href = hotspot.urlTarget;
+      return;
     }
+
+    // 一般場景切換
+    switchScene(findSceneById(hotspot.target));
+  });
+
+  // Prevent touch and scroll events from reaching the parent element.
+  stopTouchAndScrollEventPropagation(wrapper);
+
+  // Create tooltip element.
+  var tooltip = document.createElement('div');
+  tooltip.classList.add('hotspot-tooltip');
+  tooltip.classList.add('link-hotspot-tooltip');
+
+  // 判斷是不是外部連結
+  if (hotspot.urlTarget) {
+    tooltip.innerHTML = hotspot.title || "前往連結";
+  } else {
+    tooltip.innerHTML = findSceneDataById(hotspot.target).name;
+  }
+
+  wrapper.appendChild(icon);
+  wrapper.appendChild(tooltip);
+
+  return wrapper;
+}
+```
+
 
     // Add click event handler.
     wrapper.addEventListener('click', function() {
