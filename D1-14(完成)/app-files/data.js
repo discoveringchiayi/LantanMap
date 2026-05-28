@@ -4,23 +4,10 @@ var APP_DATA = {
       "id": "0--1",
       "name": "學生活動中心-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -34,14 +21,6 @@ var APP_DATA = {
           "pitch": 0.2556431149302014,
           "rotation": 0,
           "target": "1--2"
-        },
-        {
-          "yaw": -0.4859662072526145,
-          "pitch": 0.07746343777431264,
-          "rotation": 0,
-          "target": "to-jiahe-3",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#2--3",
-          "title": "嘉禾路-3"
         }
       ],
       "infoHotspots": [
@@ -57,23 +36,10 @@ var APP_DATA = {
       "id": "1--2",
       "name": "學生活動中心-2",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -101,23 +67,10 @@ var APP_DATA = {
       "id": "2--1",
       "name": "電物二館-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -151,23 +104,10 @@ var APP_DATA = {
       "id": "3--2",
       "name": "電物二館-2",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -202,23 +142,10 @@ var APP_DATA = {
       "id": "4--1",
       "name": "應化二館-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -259,23 +186,10 @@ var APP_DATA = {
       "id": "5--1",
       "name": "校車專用停車場-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -305,23 +219,10 @@ var APP_DATA = {
       "id": "6--1",
       "name": "理工大樓-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -364,23 +265,10 @@ var APP_DATA = {
       "id": "7--1",
       "name": "國際交流學園-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -408,23 +296,10 @@ var APP_DATA = {
       "id": "8--11",
       "name": "國際交流學園-1.1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -460,23 +335,10 @@ var APP_DATA = {
       "id": "9--2",
       "name": "國際交流學園-2",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -511,23 +373,10 @@ var APP_DATA = {
       "id": "10--3",
       "name": "國際交流學園-3",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -557,23 +406,10 @@ var APP_DATA = {
       "id": "11--1",
       "name": "水工與材料試驗場-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -610,23 +446,10 @@ var APP_DATA = {
       "id": "12--1",
       "name": "食品加工廠-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -663,23 +486,10 @@ var APP_DATA = {
       "id": "13--1",
       "name": "機電館周圍-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -709,23 +519,10 @@ var APP_DATA = {
       "id": "14--2",
       "name": "機電館周圍-2",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -761,23 +558,10 @@ var APP_DATA = {
       "id": "15-",
       "name": "機電館",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -806,23 +590,10 @@ var APP_DATA = {
       "id": "16-f-1",
       "name": "生物產業機械實驗室",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
