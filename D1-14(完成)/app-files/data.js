@@ -16,7 +16,14 @@ var APP_DATA = {
         "fov": 1.57
       },
       "linkHotspots": [],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": 0,
+          "pitch": 0,
+          "title": "食品加工廠",
+          "text": "<br>"
+        }
+      ]
     }
   ],
   "name": "D1-14",
