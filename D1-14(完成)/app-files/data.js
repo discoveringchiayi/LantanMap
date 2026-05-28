@@ -650,14 +650,14 @@ var APP_DATA = {
           "title": "大學路-13"
         }
       ],
-      "infoHotspots": [
-  {
-    "yaw": 0.03705152231806608,
-    "pitch": 0.09645072217914574,
-    "title": "<a href=\"../食品加工廠/index.html\" style=\"text-decoration: underline; font-size: 24px;\">前往 食品加工廠</a>",
-    "text": ""
-  }
-]
+      "infoHotspots": [ 
+        { 
+          "yaw": 0.03705152231806608, 
+          "pitch": 0.09645072217914574, 
+          "title": "<a href='../食品加工廠/index.html' target='_blank' style='color:white; text-decoration:underline; font-size:24px;'>前往 食品加工廠</a>",
+          "text": "" 
+        } 
+      ]
     },
     {
       "id": "13--1",
