@@ -654,8 +654,8 @@ var APP_DATA = {
         {
           "yaw": 0.03705152231806608,
           "pitch": 0.09645072217914574,
-          "title": "<a href='https://discoveringchiayi.github.io/map-of-Lantan-campus/食品加工廠/app-files/index.html#0-' target='_blank' style='text-decoration: underline; font-size: 24px; color: white;'>前往食品加工廠</a>",
-          "text": ""
+          "title": "食品加工廠",
+          "text": "<br>"
         }
       ]
     },
