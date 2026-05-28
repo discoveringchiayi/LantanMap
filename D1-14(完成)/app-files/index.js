@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ *   http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -147,7 +147,9 @@
 
   // Set handler for scene switch.
   scenes.forEach(function(scene) {
-    var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
+  var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
+  
+  if (el) {  // 🌟 幫它加一個防護罩：如果找不到按鈕，就跳過不要當機！
     el.addEventListener('click', function() {
       switchScene(scene);
       // On mobile, hide scene list after selecting a scene.
@@ -155,7 +157,9 @@
         hideSceneList();
       }
     });
-  });
+  }          // 🌟 記得這裡要補上大括號關起來
+  
+});
 
   // DOM elements for view controls.
   var viewUpElement = document.querySelector('#viewUp');
@@ -244,7 +248,6 @@
     }
   }
 
-  // --- 改好的網址跳轉箭頭功能 ---
   function createLinkHotspotElement(hotspot) {
 
     // Create wrapper element to hold icon and tooltip.
@@ -266,13 +269,7 @@
 
     // Add click event handler.
     wrapper.addEventListener('click', function() {
-      if (hotspot.urlTarget) {
-        // 如果有設定 urlTarget，就執行網址跳轉
-        window.open(hotspot.urlTarget, '_self');
-      } else {
-        // 否則執行原本的內部場景切換
-        switchScene(findSceneById(hotspot.target));
-      }
+      switchScene(findSceneById(hotspot.target));
     });
 
     // Prevent touch and scroll events from reaching the parent element.
@@ -283,14 +280,7 @@
     var tooltip = document.createElement('div');
     tooltip.classList.add('hotspot-tooltip');
     tooltip.classList.add('link-hotspot-tooltip');
-    
-    // 安全檢查：如果是跳轉外部網址，會找不到內部目標，改抓自訂標題
-    var targetData = findSceneDataById(hotspot.target);
-    if (targetData) {
-      tooltip.innerHTML = targetData.name;
-    } else {
-      tooltip.innerHTML = hotspot.title || "前往下一個區域"; 
-    }
+    tooltip.innerHTML = findSceneDataById(hotspot.target).name;
 
     wrapper.appendChild(icon);
     wrapper.appendChild(tooltip);
@@ -323,10 +313,6 @@
     var title = document.createElement('div');
     title.classList.add('info-hotspot-title');
     title.innerHTML = hotspot.title;
-    
-    // 🌟 魔法加在這裡：允許滑鼠點擊標題區塊內的連結！
-    title.style.pointerEvents = 'auto'; 
-    
     titleWrapper.appendChild(title);
 
     // Create close element.
@@ -346,9 +332,6 @@
     var text = document.createElement('div');
     text.classList.add('info-hotspot-text');
     text.innerHTML = hotspot.text;
-    
-    // 🌟 魔法加在這裡：允許滑鼠點擊內文區塊的連結（雙重保險）！
-    text.style.pointerEvents = 'auto';
 
     // Place header and text into wrapper element.
     wrapper.appendChild(header);
@@ -407,19 +390,12 @@
     return null;
   }
 
-// --- 指定降落功能開始 ---
-var targetId = window.location.hash.replace('#', '');
-var initialScene = scenes[0]; // 如果網址沒指定 ID，預設顯示第一張
-
-if (targetId) {
-  for (var i = 0; i < scenes.length; i++) {
-    if (scenes[i].data.id === targetId) {
-      initialScene = scenes[i];
-      break;
-    }
+var params = new URLSearchParams(window.location.search);
+  var p = parseInt(params.get('p'));
+  if (!isNaN(p) && scenes[p]) {
+    switchScene(scenes[p]); // 如果網址有密碼，就去密碼指定的房間
+  } else {
+    switchScene(scenes[0]); // 如果沒有密碼，才乖乖回大廳(第 0 張圖)
   }
-}
-switchScene(initialScene);
-// --- 指定降落功能結束 ---
 
 })();
