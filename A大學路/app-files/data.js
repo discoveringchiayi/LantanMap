@@ -779,8 +779,8 @@ var APP_DATA = {
         {
           "yaw": 1.8180588188530953,
           "pitch": 0.05926811665936782,
-          "title": "食品加工廠",
-          "text": "<br>"
+          "title": "<a href='../食品加工廠/index.html' style='text-decoration: underline; font-size: 32px !important; color: white;'>前往食品加工廠</a>",
+          "text": ""
         }
       ]
     },
@@ -1041,14 +1041,6 @@ var APP_DATA = {
           "pitch": 0.1250494617486133,
           "rotation": 0,
           "target": "26-a-21"
-        },
-        {
-          "yaw": -1.1038331069109653,
-          "pitch": 0.07476429835946519,
-          "rotation": 0,
-          "target": "to-linmu-13-5",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/E1-13林牧路(完成)/app-files/index.html#林牧路13.5的ID", 
-          "title": "林牧路-13.5"
         }
       ],
       "infoHotspots": [
@@ -1087,14 +1079,6 @@ var APP_DATA = {
           "pitch": 0.031125399634056805,
           "rotation": 0,
           "target": "24-a-201"
-        },
-        {
-          "yaw": 2.107156829721146,
-          "pitch": 0.1601341199968811,
-          "rotation": 0,
-          "target": "to-zonghe-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D15-26/app-files/index.html#8--1",
-          "title": "綜合教學大樓附近-1"
         }
       ],
       "infoHotspots": []
@@ -1195,14 +1179,6 @@ var APP_DATA = {
           "pitch": 0.09638212139216407,
           "rotation": 0,
           "target": "30-a-24"
-        },
-        {
-          "yaw": -0.008131303045800564,
-          "pitch": 0.04400945141858337,
-          "rotation": 0,
-          "target": "to-zonghe-2",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D15-26/app-files/index.html#9--2",
-          "title": "綜合教學大樓附近-2"
         }
       ],
       "infoHotspots": []
@@ -1265,14 +1241,6 @@ var APP_DATA = {
           "pitch": 0.10451945685270658,
           "rotation": 0,
           "target": "30-a-24"
-        },
-        {
-          "yaw": 2.9307875497749674,
-          "pitch": 0.08044291530310943,
-          "rotation": 0,
-          "target": "to-zonghe-3",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D15-26/app-files/index.html#10--3",
-          "title": "綜合教學大樓附近-3"
         }
       ],
       "infoHotspots": [
