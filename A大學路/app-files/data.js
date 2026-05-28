@@ -177,7 +177,6 @@ var APP_DATA = {
           "target": "E0--1",
           "title": "蘭潭招待所前-1"
         }
-      
       ],
       "infoHotspots": []
     },
@@ -470,7 +469,6 @@ var APP_DATA = {
           "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#6--1",
           "title": "理工大樓-1"
         }
-
       ],
       "infoHotspots": [
         {
@@ -779,7 +777,7 @@ var APP_DATA = {
         {
           "yaw": 1.8180588188530953,
           "pitch": 0.05926811665936782,
-          "title": "<a href='../食品加工廠/index.html' style='text-decoration: underline; font-size: 32px !important; color: white;'>前往食品加工廠</a>",
+          "title": "<a href=\"../食品加工廠/index.html\" style=\"text-decoration: underline; font-size: 24px;\">前往食品加工廠</a>",
           "text": ""
         }
       ]
@@ -1041,6 +1039,14 @@ var APP_DATA = {
           "pitch": 0.1250494617486133,
           "rotation": 0,
           "target": "26-a-21"
+        },
+        {
+          "yaw": -1.1038331069109653,
+          "pitch": 0.07476429835946519,
+          "rotation": 0,
+          "target": "to-linmu-13-5",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/E1-13林牧路(完成)/app-files/index.html#林牧路13.5的ID", 
+          "title": "林牧路-13.5"
         }
       ],
       "infoHotspots": [
@@ -1471,7 +1477,7 @@ var APP_DATA = {
       ],
       "infoHotspots": []
     },
-  {
+    {
       "id": "E0--1",
       "name": "蘭潭招待所前-1",
       "levels": [
@@ -1500,11 +1506,10 @@ var APP_DATA = {
           "target": "4--5",
           "title": "大學路-5"
         }
-      
       ],
       "infoHotspots": []
     },
-   {
+    {
       "id": "E1--2",
       "name": "蘭潭招待所前-2",
       "levels": [
@@ -1543,7 +1548,6 @@ var APP_DATA = {
       ]
     }
   ],
-  
   "name": "大學路段(A)",
   "settings": {
     "mouseViewMode": "drag",
