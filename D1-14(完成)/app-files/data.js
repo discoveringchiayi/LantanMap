@@ -651,13 +651,13 @@ var APP_DATA = {
         }
       ],
       "infoHotspots": [
-        {
-          "yaw": 0.03705152231806608,
-          "pitch": 0.09645072217914574,
-          "title": "食品加工廠",
-          "text": "<br>"
-        }
-      ]
+  {
+    "yaw": 0.03705152231806608,
+    "pitch": 0.09645072217914574,
+    "title": "<a href=\"../食品加工廠/index.html\" style=\"text-decoration: underline; font-size: 24px;\">前往 食品加工廠</a>",
+    "text": ""
+  }
+]
     },
     {
       "id": "13--1",
