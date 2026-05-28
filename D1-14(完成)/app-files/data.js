@@ -11,19 +11,12 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": 0.02646136046049108,
-        "pitch": 0.03852290267147929,
-        "fov": 1.2599180821480807
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.57
       },
       "linkHotspots": [],
-      "infoHotspots": [
-        {
-          "yaw": 0.03705152231806608,
-          "pitch": 0.09645072217914574,
-          "title": "<a href='https://discoveringchiayi.github.io/map-of-Lantan-campus/食品加工廠/index.html#0-' target='_blank' style='text-decoration: underline; font-size: 24px; color: white;'>前往食品加工廠</a>",
-          "text": "<br>"
-        }
-      ]
+      "infoHotspots": []
     }
   ],
   "name": "D1-14",
