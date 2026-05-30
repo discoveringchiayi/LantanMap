@@ -469,7 +469,6 @@ var APP_DATA = {
           "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#6--1",
           "title": "理工大樓-1"
         }
-
       ],
       "infoHotspots": [
         {
@@ -778,7 +777,7 @@ var APP_DATA = {
           "target": "0-1a-14",
           "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/Food-Processing-Pilot-Plant/index.html#0-1a-14",
           "title": "前往 食品加工廠 側門"
-        }       
+        }        
     
       ],
       "infoHotspots": [
