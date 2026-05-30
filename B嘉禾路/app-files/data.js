@@ -348,7 +348,7 @@ var APP_DATA = {
           {
           "yaw": 2.0521494, "pitch": 0.0434792, "rotation": 0,
           "target": "0--1b-9",
-          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/生資系/app-files/index.html#0--1b-9",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/生資系/index.html#0--1b-9",
           "title": "前往 生物資源館"
         }
       ],
@@ -514,7 +514,7 @@ var APP_DATA = {
           "pitch": 0.026798125630206115,
           "rotation": 5.497787143782138,
           "target": "5-",
-          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/水生系/app-files/index.html#5-",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/水生系/index.html#5-",
           "title": "前往 水產養殖研究中心(門口)"
         }
       ],
@@ -572,7 +572,7 @@ var APP_DATA = {
         {
           "yaw": -2.9838343, "pitch": 0.1014230, "rotation": 0,
           "target": "0-",
-          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/水生系/app-files/index.html#0-",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/水生系/index.html#0-",
           "title": "前往 水生生物科學館"
         }
       ],
