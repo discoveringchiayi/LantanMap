@@ -361,8 +361,6 @@
     }
   }
 
-  document.body.appendChild(modal); // 🌟 保留此原生節點宣告
-
   function findSceneById(id) {
     for (var i = 0; i < scenes.length; i++) {
       if (scenes[i].data.id === id) {
@@ -382,13 +380,23 @@
   }
 
   // --- 指定降落與初始化場景開始 ---
-  var params = new URLSearchParams(window.location.search);
-  var p = parseInt(params.get('p'));
-  if (!isNaN(p) && scenes[p]) {
-    switchScene(scenes[p]);
+  var targetId = window.location.hash.replace('#', '');
+  var initialScene = scenes[0];
+  if (targetId) {
+    for (var i = 0; i < scenes.length; i++) {
+      if (scenes[i].data.id === targetId) {
+        initialScene = scenes[i];
+        break;
+      }
+    }
   } else {
-    switchScene(scenes[0]);
+    var params = new URLSearchParams(window.location.search);
+    var p = parseInt(params.get('p'), 10);
+    if (!isNaN(p) && scenes[p]) {
+      initialScene = scenes[p];
+    }
   }
+  switchScene(initialScene);
   // --- 指定降落與初始化場景結束 ---
 
 })();
