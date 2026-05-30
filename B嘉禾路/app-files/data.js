@@ -27,14 +27,14 @@ var APP_DATA = {
           "pitch": 0.08922746106865276,
           "rotation": 0,
           "target": "a--06", 
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#5--6" 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/A大學路/app-files/index.html#5--6" 
         },
         {
           "yaw": 2.5028815857226956,
           "pitch": 0.06952337198768177,
           "rotation": 0,
           "target": "a--06.1", 
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#6--61" 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/A大學路/app-files/index.html#6--61" 
         }
       ],
       "infoHotspots": []
@@ -103,7 +103,7 @@ var APP_DATA = {
           "pitch": 0.0789721096496141,
           "rotation": 0,
           "target": "to-xuesheng-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#0--1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#0--1",
           "title": "前往 學生活動中心-1"
         }
       ],
@@ -180,7 +180,7 @@ var APP_DATA = {
           "pitch": 0.01713454602042397,
           "rotation": 0,
           "target": "to-xice-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/E26-42西側(完成)/app-files/index.html#0--1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/E26-42西側(完成)/app-files/index.html#0--1",
           "title": "西側-1(汽機車出入口)" 
         }
       ],
@@ -257,7 +257,7 @@ var APP_DATA = {
           "pitch": 0.01703546544761636,
           "rotation": 0,
           "target": "to-xiaoche-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#5--1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#5--1",
           "title": "校車專用停車場-1"
         },
         {
@@ -265,7 +265,7 @@ var APP_DATA = {
           "pitch": 0.021732058082761796,
           "rotation": 0,
           "target": "to-shuigong-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#11--1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#11--1",
           "title": "水工與材料試驗場-1"
         }
       ],
@@ -311,7 +311,7 @@ var APP_DATA = {
           "pitch": 0.09346620476077305,
           "rotation": 0,
           "target": "to-jidian-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#13--1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#13--1",
           "title": "機電館周圍-1"
         }
       ],
@@ -348,7 +348,7 @@ var APP_DATA = {
           {
           "yaw": 2.0521494, "pitch": 0.0434792, "rotation": 0,
           "target": "0--1b-9",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/g/生資系/app-files/index.html#0--1b-9",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/生資系/app-files/index.html#0--1b-9",
           "title": "前往 生物資源館"
         }
       ],
@@ -514,7 +514,7 @@ var APP_DATA = {
           "pitch": 0.026798125630206115,
           "rotation": 5.497787143782138,
           "target": "5-",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/水生系/app-files/index.html#5-",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/水生系/app-files/index.html#5-",
           "title": "前往 水產養殖研究中心(門口)"
         }
       ],
@@ -566,13 +566,13 @@ var APP_DATA = {
           "pitch": -0.07055808437992894,
           "rotation": 0,
           "target": "to-tushu-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D15-26/app-files/index.html#0--1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D15-26/app-files/index.html#0--1",
           "title": "圖書資訊館附近-1"
         },
         {
           "yaw": -2.9838343, "pitch": 0.1014230, "rotation": 0,
           "target": "0-",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/水生系/app-files/index.html#0-",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/水生系/app-files/index.html#0-",
           "title": "前往 水生生物科學館"
         }
       ],
