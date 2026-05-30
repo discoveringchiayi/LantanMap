@@ -40,7 +40,7 @@ var APP_DATA = {
           "pitch": 0.03901741357942967,
           "rotation": 0,
           "target": "to-linmu-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/E1-13林牧路(完成)/app-files/index.html#0--1", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/E1-13林牧路(完成)/app-files/index.html#0--1", 
           "title": "林牧路-1"
         },
         {
@@ -48,7 +48,7 @@ var APP_DATA = {
           "pitch": 0.0911772016234984,
           "rotation": 0,
           "target": "to-a-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#0--1", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/A大學路/app-files/index.html#0--1", 
           "title": "大學路-1"
         }
       ],
