@@ -500,7 +500,7 @@ var APP_DATA = {
          {
           "yaw": 0.0930621, "pitch": 0.0797008, "rotation": 0,
           "target": "0--1",
-          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/國際事務處/app-files/index.html#0--1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/國際事務處/index.html#0--1",
           "title": "前往 國際事務處 "
         } 
       
@@ -659,7 +659,7 @@ var APP_DATA = {
         {
           "yaw": 0.0714930, "pitch": 0.1861981, "rotation": 0,
           "target": "1-2d-12",
-          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/食品加工廠/app-files/index.html#1-2d-12",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/食品加工廠/index.html#1-2d-12",
           "title": "前往 食品加工廠 "
         } 
       ],
