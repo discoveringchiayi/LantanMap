@@ -40,7 +40,7 @@ var APP_DATA = {
           "pitch": 0.157863364971643,
           "rotation": 0,
           "target": "to-main-gate",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/E14嘉大昆蟲館旁(完成)/app-files/index.html#0-", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/E14嘉大昆蟲館旁(完成)/app-files/index.html#0-", 
           "title": "校門口"
         }
       ],
@@ -646,7 +646,7 @@ var APP_DATA = {
           "pitch": 0.08755504390743774,
           "rotation": 0,
           "target": "to-ruisui-21",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#5--21", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C15-36瑞穗路(完成)/app-files/index.html#5--21", 
           "title": "瑞穗路-21"
         }
       ],
@@ -956,7 +956,7 @@ var APP_DATA = {
           "pitch": 0.07851060756043182,
           "rotation": 0,
           "target": "to-a-20-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#24-a-201", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/A大學路/app-files/index.html#24-a-201", 
           "title": "大學路-20.1"
         }
       ],
