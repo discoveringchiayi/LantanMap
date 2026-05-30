@@ -40,7 +40,7 @@ var APP_DATA = {
           "pitch": 0.10189323276251905,
           "rotation": 0,
           "target": "back-to-a-7",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#7--7", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/A大學路/app-files/index.html#7--7", 
           "title": "大學路-7"
         }
       
@@ -175,7 +175,7 @@ var APP_DATA = {
           "pitch": 0.15563781518095965,
           "rotation": 0,
           "target": "back-to-a-8",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#8--8", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/A大學路/app-files/index.html#8--8", 
           "title": "大學路-8"
         }
       ],

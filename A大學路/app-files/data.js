@@ -27,7 +27,7 @@ var APP_DATA = {
           "pitch": 0.13308071663852772,
           "rotation": 0,
           "target": "to-main-gate",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/E14嘉大昆蟲館旁(完成)/app-files/index.html#0-", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/E14嘉大昆蟲館旁(完成)/app-files/index.html#0-", 
           "title": "校門口"
         }
       ],
@@ -66,7 +66,7 @@ var APP_DATA = {
           "pitch": 0.10020263942821472,
           "rotation": 0,
           "target": "to-c-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8 (完成)/app-files/index.html#0-c-1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C1-8 (完成)/app-files/index.html#0-c-1",
           "title": "創新育成大樓附近-1"
         }
       ],
@@ -167,7 +167,7 @@ var APP_DATA = {
           "pitch": 0.0749338822594634,
           "rotation": 0,
           "target": "to-c-8",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8 (完成)/app-files/index.html#12-c-8",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C1-8 (完成)/app-files/index.html#12-c-8",
           "title": "游泳池附近-5"
         },
         {
@@ -219,7 +219,7 @@ var APP_DATA = {
           "pitch": 0.08922746106865276,
           "rotation": 0,
           "target": "b--01", 
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#0--1" ,
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/B嘉禾路/app-files/index.html#0--1" ,
           "title": "嘉禾路-1"
         }
       ],
@@ -258,7 +258,7 @@ var APP_DATA = {
           "pitch": 0.10428505921328224,
           "rotation": 0,
           "target": "b--01", 
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#0--1" ,
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/B嘉禾路/app-files/index.html#0--1" ,
           "title": "嘉禾路-1"
         }
       ],
@@ -297,7 +297,7 @@ var APP_DATA = {
           "pitch": 0.11986457948965423,
           "rotation": 0,
           "target": "to-c-9",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C9-14/app-files/index.html#0-c-9",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C9-14嘉禾館周圍(完成)/app-files/index.html#0-c-9",
           "title": "嘉禾館周圍-1"
         }
       ],
@@ -343,7 +343,7 @@ var APP_DATA = {
           "pitch": 0.11802163631274709,
           "rotation": 0,
           "target": "to-c-13",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C9-14/app-files/index.html#3-c-13",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C9-14嘉禾館周圍(完成)/app-files/index.html#3-c-13",
           "title": "嘉禾館周圍-4"
         }
       ],
@@ -458,7 +458,7 @@ var APP_DATA = {
           "pitch": 0.14468826375832577,
           "rotation": 0,
           "target": "to-ruisui-15",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#0--15",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C15-36瑞穗路(完成)/app-files/index.html#0--15",
           "title": "瑞穗路-15"
         },
         {
@@ -466,7 +466,7 @@ var APP_DATA = {
           "pitch": -0.01253696797625281,
           "rotation": 0,
           "target": "to-ligong-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#6--1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#6--1",
           "title": "理工大樓-1"
         }
 
@@ -557,7 +557,7 @@ var APP_DATA = {
           "pitch": 0.1417205819106897,
           "rotation": 0,
           "target": "to-ruisui-24",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#9--24", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C15-36瑞穗路(完成)/app-files/index.html#9--24", 
           "title": "瑞穗路-24"
         },
         {
@@ -565,7 +565,7 @@ var APP_DATA = {
           "pitch": 0.023056421991288545,
           "rotation": 0,
           "target": "to-guoji-1-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#8--11",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#8--11",
           "title": "國際交流學園-1.1"
         }
       ],
@@ -648,7 +648,7 @@ var APP_DATA = {
           "pitch": -0.03888043015340514,
           "rotation": 0,
           "target": "to-a-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#34-a-1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C15-36瑞穗路(完成)/app-files/index.html#34-a-1",
           "title": "大學路a-1"
         },
         {
@@ -656,7 +656,7 @@ var APP_DATA = {
           "pitch": 0.08444524130462483,
           "rotation": 0,
           "target": "to-guoji-3",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#10--3",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#10--3",
           "title": "國際交流學園-3"
         }
       ],
@@ -739,7 +739,7 @@ var APP_DATA = {
           "pitch": 0.07523203800267986,
           "rotation": 0,
           "target": "to-shipin-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#12--1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#12--1",
           "title": "食品加工廠-1"
         }
       ],
@@ -776,7 +776,7 @@ var APP_DATA = {
          {
           "yaw": 1.9356309, "pitch": 0.1744764, "rotation": 0,
           "target": "0-1a-14",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/食品加工廠/app-files/index.html#0-1a-14",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/Food-Processing-Pilot-Plant/index.html#0-1a-14",
           "title": "前往 食品加工廠 側門"
         }       
     
@@ -823,7 +823,7 @@ var APP_DATA = {
           "pitch": -0.0035599331121130007,
           "rotation": 0,
           "target": "to-jidian-2",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#14--2",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#14--2",
           "title": "機電館周圍-2"
         }
       ],
@@ -913,7 +913,7 @@ var APP_DATA = {
           "pitch": 0.08177351188987103,
           "rotation": 0,
           "target": "to-shengyi-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#16-f-1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/D1-14(完成)/app-files/index.html#16-f-1",
           "title": "生物產業機械實驗室"
         }
       ],
@@ -1120,7 +1120,7 @@ var APP_DATA = {
         {
           "yaw": 2.9643759, "pitch": 0.1055439, "rotation": 0,
           "target": "0--1a-22",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/語言中心/app-files/index.html#0--1a-22",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/language-center/index.html#0--1a-22",
           "title": "前往 語言中心"
         }  
       ],
