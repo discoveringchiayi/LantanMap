@@ -1119,7 +1119,7 @@ var APP_DATA = {
         {
           "yaw": 2.9643759, "pitch": 0.1055439, "rotation": 0,
           "target": "0--1a-22",
-          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/語言中心/index.html#0--1a-22",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap-department/language-center/app-files/index.html#0--1a-22",
           "title": "前往 語言中心"
         }  
       ],
