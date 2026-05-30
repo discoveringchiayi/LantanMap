@@ -496,7 +496,14 @@ var APP_DATA = {
           "pitch": 0.16966350786273843,
           "rotation": 0,
           "target": "8--11"
-        }
+        },
+         {
+          "yaw": 0.0930621, "pitch": 0.0797008, "rotation": 0,
+          "target": "0--1",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/國際事務處/app-files/index.html#0--1",
+          "title": "前往 國際事務處 "
+        } 
+      
       ],
       "infoHotspots": [
         {
@@ -648,7 +655,13 @@ var APP_DATA = {
           "target": "to-a-13",
           "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#17--13",
           "title": "大學路-13"
-        }
+        },
+        {
+          "yaw": 0.0714930, "pitch": 0.1861981, "rotation": 0,
+          "target": "1-2d-12",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/食品加工廠/app-files/index.html#1-2d-12",
+          "title": "前往 食品加工廠 "
+        } 
       ],
       "infoHotspots": [ 
         { 

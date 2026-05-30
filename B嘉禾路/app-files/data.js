@@ -4,23 +4,10 @@ var APP_DATA = {
       "id": "0--1",
       "name": "嘉禾路-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -56,23 +43,10 @@ var APP_DATA = {
       "id": "1--2",
       "name": "嘉禾路-2",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -100,23 +74,10 @@ var APP_DATA = {
       "id": "2--3",
       "name": "嘉禾路-3",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -152,23 +113,10 @@ var APP_DATA = {
       "id": "3--4",
       "name": "嘉禾路-4",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -203,23 +151,10 @@ var APP_DATA = {
       "id": "4--5",
       "name": "嘉禾路-5(西側出入口)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -255,23 +190,10 @@ var APP_DATA = {
       "id": "5--6",
       "name": "嘉禾路-6(農藝場管理室)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -306,23 +228,10 @@ var APP_DATA = {
       "id": "6--7",
       "name": "嘉禾路-7(卍嘉大福德祠)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -373,23 +282,10 @@ var APP_DATA = {
       "id": "7--8",
       "name": "嘉禾路-8",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -425,23 +321,10 @@ var APP_DATA = {
       "id": "8--9",
       "name": "嘉禾路-9(生物資源館)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -461,6 +344,12 @@ var APP_DATA = {
           "pitch": 0.13406183396612725,
           "rotation": 0,
           "target": "9--10"
+        },
+          {
+          "yaw": 2.0521494, "pitch": 0.0434792, "rotation": 0,
+          "target": "0--1b-9",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/g/生資系/app-files/index.html#0--1b-9",
+          "title": "前往 生物資源館"
         }
       ],
       "infoHotspots": [
@@ -482,23 +371,10 @@ var APP_DATA = {
       "id": "9--10",
       "name": "嘉禾路-10(生命科學館)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -533,23 +409,10 @@ var APP_DATA = {
       "id": "10--11",
       "name": "嘉禾路-11(農業科學館)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -584,23 +447,10 @@ var APP_DATA = {
       "id": "11--12",
       "name": "嘉禾路-12(農業生物科技館)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -635,23 +485,10 @@ var APP_DATA = {
       "id": "12--13",
       "name": "嘉禾路-13(植醫館、水產養殖研究中心)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -660,12 +497,6 @@ var APP_DATA = {
         "fov": 1.2599180821480807
       },
       "linkHotspots": [
-        {
-          "yaw": -2.262045109608316,
-          "pitch": 0.026798125630206115,
-          "rotation": 5.497787143782138,
-          "target": "2--3"
-        },
         {
           "yaw": -1.6522990276206198,
           "pitch": 0.08232971681448475,
@@ -677,6 +508,14 @@ var APP_DATA = {
           "pitch": 0.11203739983831618,
           "rotation": 0,
           "target": "11--12"
+        },
+        {
+          "yaw": -2.262045109608316,
+          "pitch": 0.026798125630206115,
+          "rotation": 5.497787143782138,
+          "target": "5-",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/水生系/app-files/index.html#5-",
+          "title": "前往 水產養殖研究中心(門口)"
         }
       ],
       "infoHotspots": [
@@ -698,23 +537,10 @@ var APP_DATA = {
       "id": "13--14",
       "name": "嘉禾路-14(水生生物科學館)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -742,6 +568,12 @@ var APP_DATA = {
           "target": "to-tushu-1",
           "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D15-26/app-files/index.html#0--1",
           "title": "圖書資訊館附近-1"
+        },
+        {
+          "yaw": -2.9838343, "pitch": 0.1014230, "rotation": 0,
+          "target": "0-",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/水生系/app-files/index.html#0-",
+          "title": "前往 水生生物科學館"
         }
       ],
       "infoHotspots": [
@@ -757,23 +589,10 @@ var APP_DATA = {
       "id": "14--15",
       "name": "嘉禾路-15",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -801,23 +620,10 @@ var APP_DATA = {
       "id": "15--16",
       "name": "嘉禾路-16",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {

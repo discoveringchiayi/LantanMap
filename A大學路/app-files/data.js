@@ -772,7 +772,14 @@ var APP_DATA = {
           "pitch": 0.25307799259618946,
           "rotation": 0,
           "target": "19--15"
-        }
+        },
+         {
+          "yaw": 1.9356309, "pitch": 0.1744764, "rotation": 0,
+          "target": "0-1a-14",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/食品加工廠/app-files/index.html#0-1a-14",
+          "title": "前往 食品加工廠 側門"
+        }       
+    
       ],
       "infoHotspots": [
         {
@@ -1109,7 +1116,13 @@ var APP_DATA = {
           "pitch": 0.11991643329996293,
           "rotation": 0,
           "target": "26-a-21"
-        }
+        },
+        {
+          "yaw": 2.9643759, "pitch": 0.1055439, "rotation": 0,
+          "target": "0--1a-22",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/語言中心/app-files/index.html#0--1a-22",
+          "title": "前往 語言中心"
+        }  
       ],
       "infoHotspots": [
         {

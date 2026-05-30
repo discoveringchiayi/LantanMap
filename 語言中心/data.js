@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0--1a-22",
-      "name": "語言中心-1(接A-22)",
+      "name": "語言中心-1",
       "levels": [
         {
           "tileSize": 256,
@@ -34,7 +34,13 @@ var APP_DATA = {
           "pitch": 0.12409012729833435,
           "rotation": 0,
           "target": "1--2"
-        }
+        },
+        {
+          "yaw": -2.7411665, "pitch": 0.1957929, "rotation": 0,
+          "target": "28-a-22",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#28-a-22",
+          "title": "前往 語言中心 門口 "
+        } 
       ],
       "infoHotspots": []
     },

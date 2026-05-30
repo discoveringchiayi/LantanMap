@@ -34,13 +34,19 @@ var APP_DATA = {
           "pitch": 0.17552292129223268,
           "rotation": 0,
           "target": "1-2d-12"
-        }
+        },
+        {
+         "yaw": -0.0520536, "pitch": 0.0182766, "rotation": 0,
+          "target": "12--1",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/A大學路/app-files/index.html#12--1",
+          "title": "前往 食品加工廠 側門"
+        }       
       ],
       "infoHotspots": []
     },
     {
       "id": "1-2d-12",
-      "name": "2(接D-12)",
+      "name": "2",
       "levels": [
         {
           "tileSize": 256,
@@ -84,7 +90,13 @@ var APP_DATA = {
           "pitch": 0.2666910614387774,
           "rotation": 0,
           "target": "5-6"
-        }
+        },
+         {
+          "yaw": -0.2293529, "pitch": 0.0392821, "rotation": 0,
+          "target": "12--1",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#12--1",
+          "title": "前往 食品加工廠 門口"
+        } 
       ],
       "infoHotspots": []
     },

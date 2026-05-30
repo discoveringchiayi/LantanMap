@@ -34,7 +34,13 @@ var APP_DATA = {
           "pitch": -0.0009630602218351214,
           "rotation": 5.497787143782138,
           "target": "1--22f"
-        }
+        },
+        {
+          "yaw": -0.1763437, "pitch": 0.0689933, "rotation": 0,
+          "target": "9--2",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#9--2",
+          "title": "前往 國際事務處 門口 "
+        } 
       ],
       "infoHotspots": []
     },

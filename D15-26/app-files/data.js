@@ -369,7 +369,14 @@ var APP_DATA = {
           "pitch": 0.1893489462049711,
           "rotation": 0,
           "target": "6--7"
+        },
+        {
+          "yaw": -1.6933962, "pitch": 0.0355050, "rotation": 0,
+          "target": "0-1f-1f-6",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/圖書館/app-files/index.html#0-1f-1f-6",
+          "title": "前往 圖書資訊館"
         }
+
       ],
       "infoHotspots": [
         {

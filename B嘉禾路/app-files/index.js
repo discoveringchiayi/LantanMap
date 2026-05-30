@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *   http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -178,6 +178,7 @@
   controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(viewInElement,  'zoom', -velocity, friction), true);
   controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom',  velocity, friction), true);
 
+  // 基礎工具函式
   function sanitize(s) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
@@ -266,16 +267,12 @@
     // Add click event handler.
     wrapper.addEventListener('click', function() {
       if (hotspot.urlTarget) {
-        // 如果有設定 urlTarget，就執行網址跳轉
         window.open(hotspot.urlTarget, '_self');
       } else {
-        // 否則執行原本的內部場景切換
         switchScene(findSceneById(hotspot.target));
       }
     });
 
-    // Prevent touch and scroll events from reaching the parent element.
-    // This prevents the view control logic from interfering with the hotspot.
     stopTouchAndScrollEventPropagation(wrapper);
 
     // Create tooltip element.
@@ -283,7 +280,6 @@
     tooltip.classList.add('hotspot-tooltip');
     tooltip.classList.add('link-hotspot-tooltip');
     
-    // 安全檢查：如果是跳轉外部網址，會找不到內部目標，改抓自訂標題
     var targetData = findSceneDataById(hotspot.target);
     if (targetData) {
       tooltip.innerHTML = targetData.name;
@@ -357,20 +353,14 @@
       modal.classList.toggle('visible');
     };
 
-    // Show content when hotspot is clicked.
     wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
-
-    // Hide content when close icon is clicked.
     modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
 
-    // Prevent touch and scroll events from reaching the parent element.
-    // This prevents the view control logic from interfering with the hotspot.
     stopTouchAndScrollEventPropagation(wrapper);
 
     return wrapper;
   }
 
-  // Prevent touch and scroll events from reaching the parent element.
   function stopTouchAndScrollEventPropagation(element, eventList) {
     var eventList = [ 'touchstart', 'touchmove', 'touchend', 'touchcancel',
                       'wheel', 'mousewheel' ];
@@ -398,19 +388,21 @@
     }
     return null;
   }
-// --- 指定降落功能開始 ---
-var targetId = window.location.hash.replace('#', '');
-var initialScene = scenes[0]; // 如果網址沒指定 ID，預設顯示第一張
 
-if (targetId) {
-  for (var i = 0; i < scenes.length; i++) {
-    if (scenes[i].data.id === targetId) {
-      initialScene = scenes[i];
-      break;
+  // --- 指定降落功能 ---
+  var targetId = window.location.hash.replace('#', '');
+  var initialScene = scenes[0];
+
+  if (targetId) {
+    for (var i = 0; i < scenes.length; i++) {
+      if (scenes[i].data.id === targetId) {
+        initialScene = scenes[i];
+        break;
+      }
     }
   }
-}
-switchScene(initialScene);
-// --- 指定降落功能結束 ---
+  
+  // 啟動初始場景
+  switchScene(initialScene);
 
 })();

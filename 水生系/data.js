@@ -4,23 +4,10 @@ var APP_DATA = {
       "id": "0-",
       "name": "水生生物科學館",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -34,6 +21,12 @@ var APP_DATA = {
           "pitch": 0.10883438307898352,
           "rotation": 0,
           "target": "1--1"
+        },
+        {
+          "yaw": 0.0878173, "pitch": 0.1157236, "rotation": 0,
+          "target": "13--14",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#13--14",
+          "title": "前往 嘉禾路-14(水生生物科學館)"
         }
       ],
       "infoHotspots": [
@@ -49,23 +42,10 @@ var APP_DATA = {
       "id": "1--1",
       "name": "水生生物科學館-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -99,23 +79,10 @@ var APP_DATA = {
       "id": "2--21f",
       "name": "水生生物科學館-2(1F教室)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -137,23 +104,10 @@ var APP_DATA = {
       "id": "3--34f",
       "name": "水生生物科學館-3(4F)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -188,23 +142,10 @@ var APP_DATA = {
       "id": "4--44f",
       "name": "水生生物科學館-4視聽教室(4F)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -226,23 +167,10 @@ var APP_DATA = {
       "id": "5-",
       "name": "水產養殖研究中心(門口)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -256,6 +184,12 @@ var APP_DATA = {
           "pitch": -0.022189822629528066,
           "rotation": 5.497787143782138,
           "target": "6--1"
+        },
+        {
+          "yaw": 2.8461289, "pitch": 0.4161745, "rotation": 0,
+          "target": "12--13",
+          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#12--13",
+          "title": "前往 嘉禾路-13(植醫館、水產養殖研究中心)"
         }
       ],
       "infoHotspots": []
@@ -264,23 +198,10 @@ var APP_DATA = {
       "id": "6--1",
       "name": "水產養殖研究中心-1",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -320,23 +241,10 @@ var APP_DATA = {
       "id": "7--2",
       "name": "水產養殖研究中心-2",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -358,23 +266,10 @@ var APP_DATA = {
       "id": "8--3",
       "name": "水產養殖研究中心-3(監控中心)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
@@ -402,23 +297,10 @@ var APP_DATA = {
       "id": "9--4",
       "name": "水產養殖研究中心-4(學生實習水族魚缸)",
       "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
+        { "tileSize": 256, "size": 256, "fallbackOnly": true },
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 }
       ],
       "faceSize": 1520,
       "initialViewParameters": {
