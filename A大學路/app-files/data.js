@@ -27,7 +27,7 @@ var APP_DATA = {
           "pitch": 0.13308071663852772,
           "rotation": 0,
           "target": "to-main-gate",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/E14嘉大昆蟲館旁(完成)/app-files/index.html#0-", 
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/E14嘉大昆蟲館旁(完成)/app-files/index.html#0-", 
           "title": "校門口"
         }
       ],
@@ -66,7 +66,7 @@ var APP_DATA = {
           "pitch": 0.10020263942821472,
           "rotation": 0,
           "target": "to-c-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8 (完成)/app-files/index.html#0-c-1",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C1-8 (完成)/app-files/index.html#0-c-1",
           "title": "創新育成大樓附近-1"
         }
       ],
@@ -167,7 +167,7 @@ var APP_DATA = {
           "pitch": 0.0749338822594634,
           "rotation": 0,
           "target": "to-c-8",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C1-8 (完成)/app-files/index.html#12-c-8",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C1-8 (完成)/app-files/index.html#12-c-8",
           "title": "游泳池附近-5"
         },
         {
@@ -219,7 +219,7 @@ var APP_DATA = {
           "pitch": 0.08922746106865276,
           "rotation": 0,
           "target": "b--01", 
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#0--1" ,
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/B嘉禾路/app-files/index.html#0--1" ,
           "title": "嘉禾路-1"
         }
       ],
@@ -258,7 +258,7 @@ var APP_DATA = {
           "pitch": 0.10428505921328224,
           "rotation": 0,
           "target": "b--01", 
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/B嘉禾路/app-files/index.html#0--1" ,
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/B嘉禾路/app-files/index.html#0--1" ,
           "title": "嘉禾路-1"
         }
       ],
@@ -297,7 +297,7 @@ var APP_DATA = {
           "pitch": 0.11986457948965423,
           "rotation": 0,
           "target": "to-c-9",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C9-14/app-files/index.html#0-c-9",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C9-14/app-files/index.html#0-c-9",
           "title": "嘉禾館周圍-1"
         }
       ],
@@ -343,7 +343,7 @@ var APP_DATA = {
           "pitch": 0.11802163631274709,
           "rotation": 0,
           "target": "to-c-13",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C9-14/app-files/index.html#3-c-13",
+          "urlTarget": "https://discoveringchiayi.github.io/LantanMap/C9-14/app-files/index.html#3-c-13",
           "title": "嘉禾館周圍-4"
         }
       ],
@@ -367,218 +367,4 @@ var APP_DATA = {
       "linkHotspots": [
         {
           "yaw": -1.7034606233184775,
-          "pitch": 0.11046313166269073,
-          "rotation": 0,
-          "target": "10--82"
-        },
-        {
-          "yaw": 1.5481097565361672,
-          "pitch": 0.21478161337474866,
-          "rotation": 0,
-          "target": "8--8"
-        }
-      ],
-      "infoHotspots": [
-        {
-          "yaw": 3.0601916903582023,
-          "pitch": 0.0949723302875789,
-          "title": "學生活動中心",
-          "text": "郵局、超商、餐廳、美食街、合作社、影印"
-        }
-      ]
-    },
-    {
-      "id": "10--82",
-      "name": "大學路-8.2",
-      "levels": [
-        { "tileSize": 256, "size": 256, "fallbackOnly": true },
-        { "tileSize": 512, "size": 512 },
-        { "tileSize": 512, "size": 1024 },
-        { "tileSize": 512, "size": 2048 }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -2.987244064270989,
-        "pitch": 0.07370435431303513,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.1278344164563894,
-          "pitch": 0.18481365540848316,
-          "rotation": 0,
-          "target": "9--81"
-        },
-        {
-          "yaw": -2.0599966601545265,
-          "pitch": 0.1995995495165257,
-          "rotation": 0,
-          "target": "11--9"
-        }
-      ],
-      "infoHotspots": [
-        {
-          "yaw": 3.067750915644586,
-          "pitch": -0.004673512663817547,
-          "title": "電物一館",
-          "text": "<br>"
-        }
-      ]
-    },
-    {
-      "id": "11--9",
-      "name": "大學路-9",
-      "levels": [
-        { "tileSize": 256, "size": 256, "fallbackOnly": true },
-        { "tileSize": 512, "size": 512 },
-        { "tileSize": 512, "size": 1024 },
-        { "tileSize": 512, "size": 2048 }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.1372158314060794,
-        "pitch": -0.0062090163876433735,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.9150045881437574,
-          "pitch": 0.11768383640406199,
-          "rotation": 0,
-          "target": "10--82"
-        },
-        {
-          "yaw": 1.253731021302789,
-          "pitch": 0.10171575993629745,
-          "rotation": 0,
-          "target": "12--91"
-        },
-        {
-          "yaw": 2.784296335411767,
-          "pitch": 0.14468826375832577,
-          "rotation": 0,
-          "target": "to-ruisui-15",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#0--15",
-          "title": "瑞穗路-15"
-        },
-        {
-          "yaw": -0.01738888501028235,
-          "pitch": -0.01253696797625281,
-          "rotation": 0,
-          "target": "to-ligong-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#6--1",
-          "title": "理工大樓-1"
-        }
-      ],
-      "infoHotspots": [
-        {
-          "yaw": 0.4870067721150111,
-          "pitch": -0.06477125949539797,
-          "title": "理工大樓",
-          "text": "<br>"
-        }
-      ]
-    },
-    {
-      "id": "12--91",
-      "name": "大學路-9.1",
-      "levels": [
-        { "tileSize": 256, "size": 256, "fallbackOnly": true },
-        { "tileSize": 512, "size": 512 },
-        { "tileSize": 512, "size": 1024 },
-        { "tileSize": 512, "size": 2048 }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 0.08918839320926608,
-        "pitch": -0.011002718716799365,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.6811556095494549,
-          "pitch": 0.14203907715510056,
-          "rotation": 0,
-          "target": "11--9"
-        },
-        {
-          "yaw": -1.492808183920511,
-          "pitch": 0.12757816174732284,
-          "rotation": 0,
-          "target": "13--10"
-        }
-      ],
-      "infoHotspots": [
-        {
-          "yaw": 0.1329645078867827,
-          "pitch": -0.12006588924580086,
-          "title": "行政中心",
-          "text": "<br>"
-        },
-        {
-          "yaw": -2.4621324196379177,
-          "pitch": -0.09891997165603605,
-          "title": "應化一館",
-          "text": "<br>"
-        }
-      ]
-    },
-    {
-      "id": "13--10",
-      "name": "大學路-10",
-      "levels": [
-        { "tileSize": 256, "size": 256, "fallbackOnly": true },
-        { "tileSize": 512, "size": 512 },
-        { "tileSize": 512, "size": 1024 },
-        { "tileSize": 512, "size": 2048 }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.1315834699400753,
-        "pitch": 0.17772176611181223,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.0324002643866326,
-          "pitch": 0.11900034485723943,
-          "rotation": 0,
-          "target": "12--91"
-        },
-        {
-          "yaw": 1.1184958305312076,
-          "pitch": 0.17408966771829526,
-          "rotation": 0,
-          "target": "14--11"
-        },
-        {
-          "yaw": 2.7495171268729255,
-          "pitch": 0.1417205819106897,
-          "rotation": 0,
-          "target": "to-ruisui-24",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/C15-36瑞穗路(完成)/app-files/index.html#9--24", 
-          "title": "瑞穗路-24"
-        },
-        {
-          "yaw": -0.4181773361213388,
-          "pitch": 0.023056421991288545,
-          "rotation": 0,
-          "target": "to-guoji-1-1",
-          "urlTarget": "https://discoveringchiayi.github.io/map-of-Lantan-campus/D1-14(完成)/app-files/index.html#8--11",
-          "title": "國際交流學園-1.1"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "14--11",
-      "name": "大學路-11",
-      "levels": [
-        { "tileSize": 256, "size": 256, "fallbackOnly": true },
-        { "tileSize": 512, "size": 512 },
-        { "tileSize": 512, "size": 1024 },
-        { "tileSize": 512, "size": 2048 }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 0.09077676748087
+          "pitch": 0.110463131
