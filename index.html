@@ -100,12 +100,14 @@
         }
 
         /* 收合按鈕 (掛在面板正下方，像抽屜把手) */
+      /* 收合按鈕 (掛在面板正下方，像抽屜把手) */
         #toggle-btn {
             position: absolute;
             bottom: -35px; 
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
+            /* 🌟 修正 1：把寬度稍微加大，或者使用 auto 配合 padding */
+            width: 90px; 
             height: 35px;
             background: #00e5ff;
             color: #333;
@@ -117,6 +119,17 @@
             z-index: 101;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             pointer-events: auto;
+            
+            /* 🌟 修正 2：加入 Flexbox 確保文字絕對置中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* 🌟 修正 3：強制一行顯示，絕不換行 */
+            white-space: nowrap; 
+            
+            /* 🌟 修正 4：讓文字稍微拉開一點，視覺更舒服 */
+            letter-spacing: 2px; 
         }
 
         #legend-panel h3 { margin: 0 0 15px 0; font-size: 24px; border-bottom: 2px solid #00e5ff; padding-bottom: 10px; text-align: center; letter-spacing: 2px; }
