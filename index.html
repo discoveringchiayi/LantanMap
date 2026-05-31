@@ -350,18 +350,7 @@
         window.addEventListener('mouseup', () => { isDragging = false; });
         window.addEventListener('mouseleave', () => { isDragging = false; });
 
-        // 🌟 圖例收合功能控制
-document.addEventListener("DOMContentLoaded", function() {
-    const panel = document.getElementById('legend-panel');
-    const toggleBtn = document.getElementById('toggle-btn');
 
-    if (panel && toggleBtn) {
-        toggleBtn.addEventListener('click', () => {
-            panel.classList.toggle('collapsed');
-            // 如果面板收合了，按鈕顯示「≡」，否則顯示「◀」
-            toggleBtn.textContent = panel.classList.contains('collapsed') ? '≡' : '◀';
-        });
-    }
 });
     </script>
 </body>
