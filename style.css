@@ -1,173 +1,149 @@
-body {
-            margin: 0;
-            padding: 0;
-            background-color: #8ECA45; /* 地圖底色 */
-            overflow: hidden; 
-            font-family: sans-serif;
-        }
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #99CC33;
+    font-family: "PMingLiU", "新細明體", MingLiU, serif;
+}
 
-        /* 🌟 地圖容器與拖曳設定 */
-        #viewport {
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-        }
+/* 讓地圖容器固定置中，並由 JS 計算出與原圖相同長寬比的尺寸 */
+.map-viewport {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #99CC33;
+}
 
-        #map-container {
-            position: absolute;
-            transform-origin: 0 0; 
-        }
+.map-container {
+    position: relative;
+    overflow: hidden;
+    transform-origin: center center;
+    cursor: grab;
+    /* width/height 會由 index.html 的 JS 依照圖片比例設定 */
+}
 
-        #map-image {
-            display: block;
-            cursor: grab; 
-        }
-        #map-image:active {
-            cursor: grabbing; 
-        }
+.map-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 不變形、也不裁切；搭配容器比例可避免點位漂移 */
+    pointer-events: none; /* 讓點位/拖曳事件主要由容器處理 */
+    user-select: none;
+}
 
-        /* 🌟 發光脈衝點點設計 */
-        .hotspot {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            width: 50px;  
-            height: 50px; 
-            background-color: white;
-            border: 6px solid var(--theme-color, #00e5ff); 
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.5);
-            z-index: 10;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #333333; 
-            font-size: 24px; 
-            font-weight: 900; 
-        }
+/* ================================ */
+/* 👇 ThingLink 風格按鈕設計 👇 */
+/* ================================ */
 
-        .hotspot::after {
-            content: '';
-            position: absolute;
-            top: -50%; left: -50%;
-            width: 200%; height: 200%;
-            background-color: var(--theme-color, #00e5ff);
-            border-radius: 50%;
-            opacity: 0.5;
-            z-index: -1;
-            animation: pulse 2s infinite ease-in-out;
-        }
+.tl-pin {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    z-index: 10;
+}
 
-        @keyframes pulse {
-            0% { transform: scale(0.8); opacity: 0.8; }
-            100% { transform: scale(1.8); opacity: 0; }
-        }
+.tl-pin:hover,
+.tl-pin:focus-within {
+    z-index: 999;
+}
 
-        .hotspot::before {
-            content: attr(data-name);
-            position: absolute;
-            bottom: 85px; 
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(40, 40, 40, 0.95); 
-            color: #ffffff; 
-            padding: 12px 24px; 
-            border-radius: 12px; 
-            font-size: 32px; 
-            font-weight: bold;
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none; 
-            transition: opacity 0.2s ease;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
-        }
+.tl-dot {
+    position: relative;
+    z-index: 1;
+    width: 8px;  
+    height: 8px; 
+    border-radius: 50%;
+    border: 1px solid white; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25); 
+    transition: transform 0.2s;
+}
 
-        .hotspot:hover::before {
-            opacity: 1;
-        }
+.blue-dot { background-color: #1e88e5; }   /* 全站基礎藍色 */
+.orange-dot { background-color: #1e88e5; } /* 與藍色統一，避免混色 */
 
-        /* 🌟 收合式圖例面板設計 */
-        #legend-panel {
-            position: fixed; 
-            top: 20px;
-            right: 20px; 
-            background-color: rgba(40, 40, 40, 0.9); 
-            color: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
-            z-index: 100; 
-            max-height: 80vh; 
-            width: 250px; 
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
+/* 分區用顏色 */
+.dot-dorm {          /* 宿舍、宿舍餐廳：改為灰色系 */
+    background-color: #9e9e9e;
+}
 
-        /* 收合狀態：往右移並變透明 */
-        #legend-panel.collapsed {
-            transform: translateX(270px); 
-            opacity: 0.6;
-        }
+.dot-campus,         /* 教學館、公共設施 */
+.blue-dot,           /* 入口等原本藍點 */
+.orange-dot {        /* 原本橘點一併統一為藍點 */
+    background-color: #1e88e5;
+}
 
-        /* 抽屜把手按鈕 */
-        #toggle-btn {
-            position: absolute;
-            top: 15px;
-            left: -35px; 
-            width: 35px;
-            height: 40px;
-            background: #00e5ff;
-            color: #333;
-            border: none;
-            border-radius: 8px 0 0 8px; 
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 18px;
-            z-index: 101;
-            box-shadow: -3px 0 8px rgba(0,0,0,0.3);
-        }
+.tl-label {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(20, 28, 38, 0.65);
+    color: rgba(255, 255, 255, 0.96);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
 
-        #legend-panel h3 {
-            margin: 0 0 15px 0;
-            font-size: 20px;
-            border-bottom: 2px solid #00e5ff;
-            padding-bottom: 10px;
-            text-align: center;
-            letter-spacing: 2px;
-        }
+.tl-pin:hover .tl-dot {
+    transform: scale(1.2);
+}
 
-        #legend-panel ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            max-height: 60vh; 
-            overflow-y: auto; 
-        }
+.tl-pin:hover .tl-label { 
+    opacity: 1;
+    visibility: visible;
+}
 
-        #legend-panel li {
-            font-size: 16px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            cursor: pointer; 
-            transition: color 0.2s ease, transform 0.1s ease;
-        }
+.tl-pin:focus-visible .tl-label {
+    opacity: 1;
+    visibility: visible;
+}
 
-        #legend-panel li:hover {
-            color: #00e5ff; 
-            transform: translateX(5px);
-        }
+/* ================================ */
+/* 👇 在這裡調整按鈕在地圖上的位置 👇 */
+/* ================================ */
 
-        .leg-num {
-            display: inline-block;
-            background-color: #00e5ff;
-            color: #333;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 28px;
-            font-weight: bold;
-            margin-right: 12px;
-            font-size: 14px;
-            flex-shrink: 0;
-        }
+#pin-a {
+    left: 30.62%;
+    top: 82.62%;
+}
+/* 讓面板支持平滑過渡 */
+#legend-panel {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* 收合後的狀態：往右移並稍微變透明 */
+#legend-panel.collapsed {
+    transform: translateX(230px);
+    opacity: 0.6;
+}
+
+/* 收合按鈕的樣式 */
+#toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: -45px;
+    width: 35px;
+    height: 35px;
+    background: #00e5ff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 101;
+}
