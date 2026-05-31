@@ -121,3 +121,63 @@ body, html {
     top: 82.62%;
 }
 
+/* ================================ */
+/* 👇 收合式圖例面板設計 👇 */
+/* ================================ */
+
+/* 面板基礎外觀與平滑過渡 */
+#legend-panel {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(40, 40, 40, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    z-index: 100;
+    max-height: 80vh;
+    width: 250px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* 收合後的狀態：往右移並稍微變透明 */
+#legend-panel.collapsed {
+    transform: translateX(270px); /* 讓它往右退到螢幕外緣 */
+    opacity: 0.6;
+}
+
+/* 收合按鈕的樣式 (設計成一個側邊抽屜把手) */
+#toggle-btn {
+    position: absolute;
+    top: 15px;
+    left: -35px; /* 凸出在左側 */
+    width: 35px;
+    height: 40px;
+    background: #00e5ff;
+    color: #333;
+    border: none;
+    border-radius: 8px 0 0 8px; /* 左邊圓角 */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 101;
+    box-shadow: -3px 0 8px rgba(0,0,0,0.3);
+}
+
+/* 面板內部細節排版 */
+#legend-panel h3 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+#legend-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 60vh;
+    overflow-y: auto;
+}
